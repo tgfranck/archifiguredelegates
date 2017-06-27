@@ -40,7 +40,7 @@ import com.archimatetool.model.util.Logger;
  *   <li>{@link com.archimatetool.model.impl.DiagramModelArchimateObject#getChildren <em>Children</em>}</li>
  *   <li>{@link com.archimatetool.model.impl.DiagramModelArchimateObject#getTextPosition <em>Text Position</em>}</li>
  *   <li>{@link com.archimatetool.model.impl.DiagramModelArchimateObject#getArchimateElement <em>Archimate Element</em>}</li>
- *   <li>{@link com.archimatetool.model.impl.DiagramModelArchimateObject#getType <em>Type</em>}</li>
+ *   <li>{@link com.archimatetool.model.impl.DiagramModelArchimateObject#getFigureDelegateType <em>Figure Delegate Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,106 +48,97 @@ import com.archimatetool.model.util.Logger;
 public class DiagramModelArchimateObject extends DiagramModelObject implements IDiagramModelArchimateObject {
     
     /**
-     * The cached value of the '{@link #getChildren() <em>Children</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getChildren() <em>Children</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getChildren()
-     * @generated
-     * @ordered
-     */
+	 * @see #getChildren()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<IDiagramModelObject> children;
     /**
-     * The default value of the '{@link #getTextPosition() <em>Text Position</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTextPosition() <em>Text Position</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getTextPosition()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTextPosition()
+	 * @generated
+	 * @ordered
+	 */
     protected static final int TEXT_POSITION_EDEFAULT = 0;
     /**
-     * The cached value of the '{@link #getTextPosition() <em>Text Position</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTextPosition() <em>Text Position</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getTextPosition()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTextPosition()
+	 * @generated
+	 * @ordered
+	 */
     protected int textPosition = TEXT_POSITION_EDEFAULT;
     /**
-     * The default value of the '{@link #getType() <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see #getType()
-     * @generated
-     * @ordered
-     */
-    protected static final int TYPE_EDEFAULT = 0;
-    /**
-     * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see #getType()
-     * @generated
-     * @ordered
-     */
-    protected int type = TYPE_EDEFAULT;
-    /**
+	 * The cached value of the '{@link #getFigureDelegateType() <em>Figure Delegate Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFigureDelegateType()
+	 * @generated
+	 * @ordered
+	 */
+	protected Class<?> figureDelegateType;
+				/**
      * Wrapped Archimate Element
      */
     private IArchimateElement fArchimateElement;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected DiagramModelArchimateObject() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT;
-    }
+		return IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<IDiagramModelObject> getChildren() {
-        if (children == null) {
-            children = new EObjectContainmentEList<IDiagramModelObject>(IDiagramModelObject.class, this, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN);
-        }
-        return children;
-    }
+		if (children == null) {
+			children = new EObjectContainmentEList<IDiagramModelObject>(IDiagramModelObject.class, this, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN);
+		}
+		return children;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getTextPosition() {
-        return textPosition;
-    }
+		return textPosition;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setTextPosition(int newTextPosition) {
-        int oldTextPosition = textPosition;
-        textPosition = newTextPosition;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION, oldTextPosition, textPosition));
-    }
+		int oldTextPosition = textPosition;
+		textPosition = newTextPosition;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION, oldTextPosition, textPosition));
+	}
 
     @Override
     public String getName() {
@@ -211,27 +202,27 @@ public class DiagramModelArchimateObject extends DiagramModelObject implements I
     }
     
     /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public int getType() {
-        return type;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Class<?> getFigureDelegateType() {
+		return figureDelegateType;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void setType(int newType) {
-        int oldType = type;
-        type = newType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE, oldType, type));
-    }
+				/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFigureDelegateType(Class<?> newFigureDelegateType) {
+		Class<?> oldFigureDelegateType = figureDelegateType;
+		figureDelegateType = newFigureDelegateType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE, oldFigureDelegateType, figureDelegateType));
+	}
 
-    /**
+				/**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated NOT
@@ -301,179 +292,179 @@ public class DiagramModelArchimateObject extends DiagramModelObject implements I
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
-                return ((InternalEList<?>)getChildren()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
+				return ((InternalEList<?>)getChildren()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
-                return getChildren();
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
-                return getTextPosition();
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
-                return getArchimateElement();
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE:
-                return getType();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
+				return getChildren();
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
+				return getTextPosition();
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
+				return getArchimateElement();
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE:
+				return getFigureDelegateType();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
-                getChildren().clear();
-                getChildren().addAll((Collection<? extends IDiagramModelObject>)newValue);
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
-                setTextPosition((Integer)newValue);
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
-                setArchimateElement((IArchimateElement)newValue);
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE:
-                setType((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
+				getChildren().clear();
+				getChildren().addAll((Collection<? extends IDiagramModelObject>)newValue);
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
+				setTextPosition((Integer)newValue);
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
+				setArchimateElement((IArchimateElement)newValue);
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE:
+				setFigureDelegateType((Class<?>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
-                getChildren().clear();
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
-                setTextPosition(TEXT_POSITION_EDEFAULT);
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
-                setArchimateElement((IArchimateElement)null);
-                return;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE:
-                setType(TYPE_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
+				getChildren().clear();
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
+				setTextPosition(TEXT_POSITION_EDEFAULT);
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
+				setArchimateElement((IArchimateElement)null);
+				return;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE:
+				setFigureDelegateType((Class<?>)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
-                return children != null && !children.isEmpty();
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
-                return textPosition != TEXT_POSITION_EDEFAULT;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
-                return getArchimateElement() != null;
-            case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE:
-                return type != TYPE_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN:
+				return children != null && !children.isEmpty();
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION:
+				return textPosition != TEXT_POSITION_EDEFAULT;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__ARCHIMATE_ELEMENT:
+				return getArchimateElement() != null;
+			case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE:
+				return figureDelegateType != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-        if (baseClass == IDiagramModelContainer.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN: return IArchimatePackage.DIAGRAM_MODEL_CONTAINER__CHILDREN;
-                default: return -1;
-            }
-        }
-        if (baseClass == IDiagramModelArchimateComponent.class) {
-            switch (derivedFeatureID) {
-                default: return -1;
-            }
-        }
-        if (baseClass == ITextPosition.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION: return IArchimatePackage.TEXT_POSITION__TEXT_POSITION;
-                default: return -1;
-            }
-        }
-        return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
-    }
+		if (baseClass == IDiagramModelContainer.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN: return IArchimatePackage.DIAGRAM_MODEL_CONTAINER__CHILDREN;
+				default: return -1;
+			}
+		}
+		if (baseClass == IDiagramModelArchimateComponent.class) {
+			switch (derivedFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == ITextPosition.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION: return IArchimatePackage.TEXT_POSITION__TEXT_POSITION;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-        if (baseClass == IDiagramModelContainer.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.DIAGRAM_MODEL_CONTAINER__CHILDREN: return IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN;
-                default: return -1;
-            }
-        }
-        if (baseClass == IDiagramModelArchimateComponent.class) {
-            switch (baseFeatureID) {
-                default: return -1;
-            }
-        }
-        if (baseClass == ITextPosition.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.TEXT_POSITION__TEXT_POSITION: return IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION;
-                default: return -1;
-            }
-        }
-        return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-    }
+		if (baseClass == IDiagramModelContainer.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.DIAGRAM_MODEL_CONTAINER__CHILDREN: return IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__CHILDREN;
+				default: return -1;
+			}
+		}
+		if (baseClass == IDiagramModelArchimateComponent.class) {
+			switch (baseFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == ITextPosition.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.TEXT_POSITION__TEXT_POSITION: return IArchimatePackage.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TEXT_POSITION;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (textPosition: "); //$NON-NLS-1$
-        result.append(textPosition);
-        result.append(", type: "); //$NON-NLS-1$
-        result.append(type);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (textPosition: "); //$NON-NLS-1$
+		result.append(textPosition);
+		result.append(", figureDelegateType: "); //$NON-NLS-1$
+		result.append(figureDelegateType);
+		result.append(')');
+		return result.toString();
+	}
 
 } //DiagramModelArchimateObject

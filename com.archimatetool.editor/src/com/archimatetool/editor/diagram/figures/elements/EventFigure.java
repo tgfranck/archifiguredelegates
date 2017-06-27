@@ -10,18 +10,10 @@ import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
-import org.eclipse.swt.graphics.Pattern;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.FigureUtils;
 import com.archimatetool.editor.diagram.figures.IFigureDelegate;
-import com.archimatetool.editor.diagram.figures.RoundedRectangleFigureDelegate;
-import com.archimatetool.editor.preferences.IPreferenceConstants;
-import com.archimatetool.editor.preferences.Preferences;
 import com.archimatetool.model.IDiagramModelArchimateObject;
-
-
-
 
 /**
  * Event Figure
@@ -34,62 +26,13 @@ public class EventFigure extends AbstractTextControlContainerFigure {
 
     public EventFigure() {
         super(TEXT_FLOW_CONTROL);
-        fMainFigureDelegate = new RoundedRectangleFigureDelegate(this, 22 - getTextControlMarginWidth());
+        //fMainFigureDelegate = new RoundedRectangleFigureDelegate(this, 22 - getTextControlMarginWidth());
     }
     
     @Override
     public void drawFigure(Graphics graphics) {
-        if(getFigureDelegate() != null) {
-            getFigureDelegate().drawFigure(graphics);
-            drawIcon(graphics);
-            return;
-        }
-
-        graphics.pushState();
-        
-        Rectangle bounds = getBounds().getCopy();
-        
-        int indent = Math.min(bounds.height / 3, bounds.width / 3);
-        int centre_y = bounds.y + bounds.height / 2 - 1;
-        int arc_startx = bounds.x + bounds.width - indent;
-        
-        if(!isEnabled()) {
-            setDisabledState(graphics);
-        }
-        
-        int x_offset = 2;
-        int y_offset = 1;
-        
-        // Main Fill
-        Path path = new Path(null);
-        path.moveTo(bounds.x, bounds.y);
-        path.lineTo(bounds.x + indent, centre_y);
-        path.lineTo(bounds.x, bounds.y + bounds.height - y_offset);
-        path.lineTo(arc_startx, bounds.y + bounds.height - y_offset);
-        path.addArc(arc_startx - indent - x_offset, bounds.y,
-                indent * 2 + 1, bounds.height - y_offset, -90, 180);
-        
-        graphics.setBackgroundColor(getFillColor());
-
-        Pattern gradient = null;
-        if(Preferences.STORE.getBoolean(IPreferenceConstants.SHOW_GRADIENT)) {
-            gradient = FigureUtils.createGradient(graphics, bounds, getFillColor());
-            graphics.setBackgroundPattern(gradient);
-        }
-
-        graphics.fillPath(path);
-        
-        if(gradient != null) {
-            gradient.dispose();
-        }
-
-        // Outline
-        graphics.setForegroundColor(getLineColor());
-        path.lineTo(bounds.x, bounds.y);
-        graphics.drawPath(path);
-        path.dispose();
-        
-        graphics.popState();
+        super.drawFigure(graphics);
+        drawIcon(graphics);      
     }
 
     /**
@@ -134,12 +77,6 @@ public class EventFigure extends AbstractTextControlContainerFigure {
     protected Point getIconOrigin() {
         Rectangle bounds = getBounds();
         return new Point(bounds.x + bounds.width - 20, bounds.y + 7);
-    }
-
-    @Override
-    public IFigureDelegate getFigureDelegate() {
-        int type = getDiagramModelObject().getType();
-        return type == 0 ? fMainFigureDelegate : null;
     }
     
     @Override

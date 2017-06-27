@@ -17,412 +17,412 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum FolderType implements Enumerator {
     /**
-     * The '<em><b>User</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>User</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #USER_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #USER_VALUE
+	 * @generated
+	 * @ordered
+	 */
     USER(0, "user", "user"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Strategy</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Strategy</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #STRATEGY_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #STRATEGY_VALUE
+	 * @generated
+	 * @ordered
+	 */
     STRATEGY(1, "strategy", "strategy"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Business</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Business</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #BUSINESS_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #BUSINESS_VALUE
+	 * @generated
+	 * @ordered
+	 */
     BUSINESS(2, "business", "business"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Application</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Application</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #APPLICATION_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #APPLICATION_VALUE
+	 * @generated
+	 * @ordered
+	 */
     APPLICATION(3, "application", "application"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Technology</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Technology</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #TECHNOLOGY_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #TECHNOLOGY_VALUE
+	 * @generated
+	 * @ordered
+	 */
     TECHNOLOGY(4, "technology", "technology"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Relations</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Relations</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #RELATIONS_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #RELATIONS_VALUE
+	 * @generated
+	 * @ordered
+	 */
     RELATIONS(5, "relations", "relations"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Other</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Other</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #OTHER_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #OTHER_VALUE
+	 * @generated
+	 * @ordered
+	 */
     OTHER(6, "other", "other"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Diagrams</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Diagrams</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #DIAGRAMS_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #DIAGRAMS_VALUE
+	 * @generated
+	 * @ordered
+	 */
     DIAGRAMS(7, "diagrams", "diagrams"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Motivation</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Motivation</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #MOTIVATION_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #MOTIVATION_VALUE
+	 * @generated
+	 * @ordered
+	 */
     MOTIVATION(8, "motivation", "motivation"), //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>Implementation migration</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Implementation migration</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #IMPLEMENTATION_MIGRATION_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #IMPLEMENTATION_MIGRATION_VALUE
+	 * @generated
+	 * @ordered
+	 */
     IMPLEMENTATION_MIGRATION(9, "implementation_migration", "implementation_migration"); //$NON-NLS-1$ //$NON-NLS-2$
 
     /**
-     * The '<em><b>User</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>User</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>User</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #USER
-     * @model name="user"
-     * @generated
-     * @ordered
-     */
+	 * @see #USER
+	 * @model name="user"
+	 * @generated
+	 * @ordered
+	 */
     public static final int USER_VALUE = 0;
 
     /**
-     * The '<em><b>Strategy</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Strategy</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Strategy</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #STRATEGY
-     * @model name="strategy"
-     * @generated
-     * @ordered
-     */
+	 * @see #STRATEGY
+	 * @model name="strategy"
+	 * @generated
+	 * @ordered
+	 */
     public static final int STRATEGY_VALUE = 1;
 
     /**
-     * The '<em><b>Business</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Business</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Business</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #BUSINESS
-     * @model name="business"
-     * @generated
-     * @ordered
-     */
+	 * @see #BUSINESS
+	 * @model name="business"
+	 * @generated
+	 * @ordered
+	 */
     public static final int BUSINESS_VALUE = 2;
 
     /**
-     * The '<em><b>Application</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Application</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Application</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #APPLICATION
-     * @model name="application"
-     * @generated
-     * @ordered
-     */
+	 * @see #APPLICATION
+	 * @model name="application"
+	 * @generated
+	 * @ordered
+	 */
     public static final int APPLICATION_VALUE = 3;
 
     /**
-     * The '<em><b>Technology</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Technology</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Technology</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #TECHNOLOGY
-     * @model name="technology"
-     * @generated
-     * @ordered
-     */
+	 * @see #TECHNOLOGY
+	 * @model name="technology"
+	 * @generated
+	 * @ordered
+	 */
     public static final int TECHNOLOGY_VALUE = 4;
 
     /**
-     * The '<em><b>Relations</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Relations</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Relations</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #RELATIONS
-     * @model name="relations"
-     * @generated
-     * @ordered
-     */
+	 * @see #RELATIONS
+	 * @model name="relations"
+	 * @generated
+	 * @ordered
+	 */
     public static final int RELATIONS_VALUE = 5;
 
     /**
-     * The '<em><b>Other</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Other</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Other</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #OTHER
-     * @model name="other"
-     * @generated
-     * @ordered
-     */
+	 * @see #OTHER
+	 * @model name="other"
+	 * @generated
+	 * @ordered
+	 */
     public static final int OTHER_VALUE = 6;
 
     /**
-     * The '<em><b>Diagrams</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Diagrams</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Diagrams</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #DIAGRAMS
-     * @model name="diagrams"
-     * @generated
-     * @ordered
-     */
+	 * @see #DIAGRAMS
+	 * @model name="diagrams"
+	 * @generated
+	 * @ordered
+	 */
     public static final int DIAGRAMS_VALUE = 7;
 
     /**
-     * The '<em><b>Motivation</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Motivation</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Motivation</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #MOTIVATION
-     * @model name="motivation"
-     * @generated
-     * @ordered
-     */
+	 * @see #MOTIVATION
+	 * @model name="motivation"
+	 * @generated
+	 * @ordered
+	 */
     public static final int MOTIVATION_VALUE = 8;
 
     /**
-     * The '<em><b>Implementation migration</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Implementation migration</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Implementation migration</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #IMPLEMENTATION_MIGRATION
-     * @model name="implementation_migration"
-     * @generated
-     * @ordered
-     */
+	 * @see #IMPLEMENTATION_MIGRATION
+	 * @model name="implementation_migration"
+	 * @generated
+	 * @ordered
+	 */
     public static final int IMPLEMENTATION_MIGRATION_VALUE = 9;
 
     /**
-     * An array of all the '<em><b>Folder Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Folder Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final FolderType[] VALUES_ARRAY =
         new FolderType[] {
-            USER,
-            STRATEGY,
-            BUSINESS,
-            APPLICATION,
-            TECHNOLOGY,
-            RELATIONS,
-            OTHER,
-            DIAGRAMS,
-            MOTIVATION,
-            IMPLEMENTATION_MIGRATION,
-        };
+			USER,
+			STRATEGY,
+			BUSINESS,
+			APPLICATION,
+			TECHNOLOGY,
+			RELATIONS,
+			OTHER,
+			DIAGRAMS,
+			MOTIVATION,
+			IMPLEMENTATION_MIGRATION,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Folder Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Folder Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<FolderType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Folder Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Folder Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static FolderType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            FolderType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			FolderType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Folder Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Folder Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static FolderType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            FolderType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			FolderType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Folder Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Folder Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static FolderType get(int value) {
-        switch (value) {
-            case USER_VALUE: return USER;
-            case STRATEGY_VALUE: return STRATEGY;
-            case BUSINESS_VALUE: return BUSINESS;
-            case APPLICATION_VALUE: return APPLICATION;
-            case TECHNOLOGY_VALUE: return TECHNOLOGY;
-            case RELATIONS_VALUE: return RELATIONS;
-            case OTHER_VALUE: return OTHER;
-            case DIAGRAMS_VALUE: return DIAGRAMS;
-            case MOTIVATION_VALUE: return MOTIVATION;
-            case IMPLEMENTATION_MIGRATION_VALUE: return IMPLEMENTATION_MIGRATION;
-        }
-        return null;
-    }
+		switch (value) {
+			case USER_VALUE: return USER;
+			case STRATEGY_VALUE: return STRATEGY;
+			case BUSINESS_VALUE: return BUSINESS;
+			case APPLICATION_VALUE: return APPLICATION;
+			case TECHNOLOGY_VALUE: return TECHNOLOGY;
+			case RELATIONS_VALUE: return RELATIONS;
+			case OTHER_VALUE: return OTHER;
+			case DIAGRAMS_VALUE: return DIAGRAMS;
+			case MOTIVATION_VALUE: return MOTIVATION;
+			case IMPLEMENTATION_MIGRATION_VALUE: return IMPLEMENTATION_MIGRATION;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private FolderType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
     
 } //FolderType

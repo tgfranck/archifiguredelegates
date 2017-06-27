@@ -413,8 +413,11 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="archimateElement" eType="#//ArchimateElement"
         volatile="true" resolveProxies="false"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
-        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="figureDelegateType">
+      <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaClass">
+        <eTypeArguments/>
+      </eGenericType>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DiagramModelArchimateConnection" eSuperTypes="#//DiagramModelConnection #//DiagramModelArchimateComponent">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">

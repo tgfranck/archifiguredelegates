@@ -12,7 +12,6 @@ import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RoundedRectangleFigureDelegate;
 
 
 /**
@@ -25,7 +24,7 @@ public class CourseOfActionFigure extends AbstractTextControlContainerFigure {
     public CourseOfActionFigure() {
         super(TEXT_FLOW_CONTROL);
         // Use a Rounded Rectangle Figure Delegate to Draw
-        setFigureDelegate(new RoundedRectangleFigureDelegate(this, 25 - getTextControlMarginWidth()));
+        //setFigureDelegate(new RoundedRectangleFigureDelegate(this, 25 - getTextControlMarginWidth()));
     }
     
     @Override

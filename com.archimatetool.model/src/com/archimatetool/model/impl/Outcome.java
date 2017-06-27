@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Outcome extends ArchimateElement implements IOutcome {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Outcome() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.OUTCOME;
-    }
+		return IArchimatePackage.Literals.OUTCOME;
+	}
 
 } //Outcome

@@ -5,6 +5,11 @@
  */
 package com.archimatetool.editor.propertysections;
 
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notification;
@@ -23,11 +28,11 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.ui.PlatformUI;
 
+import com.archimatetool.editor.diagram.figures.IFigureDelegate;
 import com.archimatetool.editor.model.commands.EObjectFeatureCommand;
 import com.archimatetool.editor.ui.FigureImagePreviewFactory;
 import com.archimatetool.editor.ui.factory.IArchimateElementUIProvider;
 import com.archimatetool.editor.ui.factory.ObjectUIFactory;
-import com.archimatetool.model.IArchimateElement;
 import com.archimatetool.model.IArchimatePackage;
 import com.archimatetool.model.IDiagramModelArchimateObject;
 
@@ -69,39 +74,47 @@ public class DiagramFigureTypeSection extends AbstractArchimatePropertySection {
         public void notifyChanged(Notification msg) {
             Object feature = msg.getFeature();
             // Model event (Undo/Redo and here!)
-            if(feature == IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE) {
-                refreshControls();
-            }
+	        if(feature == IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE) {
+	        	refreshControls();
+	        }	        
         }
     };
     
     private IDiagramModelArchimateObject fDiagramObject;
     
-    private ImageFigure figure1, figure2;
+    private Set<ImageFigure> figures = new LinkedHashSet<ImageFigure>();
+    
+    private Composite parent;
 
     @Override
     protected void createControls(Composite parent) {
+    	
+    	this.parent = parent;
+    	
         // Help ID
         PlatformUI.getWorkbench().getHelpSystem().setHelp(parent, HELP_ID);
         
-        figure1 = new ImageFigure(parent);
-        figure2 = new ImageFigure(parent);
     }
     
     protected void refreshControls() {
-        IArchimateElement element = fDiagramObject.getArchimateElement();
+    	
+    	for(ImageFigure figure: figures){
+    		figure.dispose();
+    	}
+    	
+    	figures.clear();
         
-        Image image1 = FigureImagePreviewFactory.getFigurePreviewImageForClass(element.eClass());
-        Image image2 = FigureImagePreviewFactory.getAlternateFigurePreviewImageForClass(element.eClass());
+        Map<Image, Class<? extends IFigureDelegate>> images = FigureImagePreviewFactory.getAlternativeFigurePreviewImagesForClass(fDiagramObject.getArchimateElement().eClass());
         
-        figure1.setImage(image1);
-        figure2.setImage(image2);
+        for(Entry<Image, Class<? extends IFigureDelegate>> e : images.entrySet()) {
+        	ImageFigure figure = new ImageFigure(parent, e.getValue());        	
+        	figure.setImage(e.getKey());
+        	figure.setSelected(e.getValue() == fDiagramObject.getFigureDelegateType());
+        	figures.add(figure);
+        }
         
-        figure1.getParent().layout();
-
-        int type = fDiagramObject.getType();
-        figure1.setSelected(type == 0);
-        figure2.setSelected(type == 1);
+        parent.layout();
+        
     }
 
     @Override
@@ -131,10 +144,11 @@ public class DiagramFigureTypeSection extends AbstractArchimatePropertySection {
     }
     
     private class ImageFigure extends Composite {
+    	
         boolean selected;
         Label label;
 
-        public ImageFigure(Composite parent) {
+        public ImageFigure(Composite parent, Class<? extends IFigureDelegate> delegateClass) {
             super(parent, SWT.NULL);
             setBackgroundMode(SWT.INHERIT_DEFAULT);
             GridLayout gridLayout = new GridLayout();
@@ -162,9 +176,10 @@ public class DiagramFigureTypeSection extends AbstractArchimatePropertySection {
                 @Override
                 public void mouseDown(MouseEvent e) {
                     if(!selected && isAlive()) {
-                        int newType = fDiagramObject.getType() == 0 ? 1 : 0;
+                    	fDiagramObject.setFigureDelegateType(delegateClass);  
+                        Class<?> newDelegateClass = fDiagramObject.getFigureDelegateType();
                         getCommandStack().execute(new EObjectFeatureCommand(Messages.DiagramFigureTypeSection_0, getEObject(),
-                                IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE, newType));
+                                IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__FIGURE_DELEGATE_TYPE, newDelegateClass));
                     }
                 }
             });

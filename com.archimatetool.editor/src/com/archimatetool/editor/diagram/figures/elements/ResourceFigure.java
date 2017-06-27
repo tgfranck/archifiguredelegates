@@ -12,7 +12,6 @@ import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RectangleFigureDelegate;
 
 
 /**
@@ -25,7 +24,7 @@ public class ResourceFigure extends AbstractTextControlContainerFigure {
     public ResourceFigure() {
         super(TEXT_FLOW_CONTROL);
         // Use a Rectangle Figure Delegate to Draw
-        setFigureDelegate(new RectangleFigureDelegate(this, 22 - getTextControlMarginWidth()));
+        //setFigureDelegate(new RectangleFigureDelegate(this, 22 - getTextControlMarginWidth()));
     }
     
     @Override

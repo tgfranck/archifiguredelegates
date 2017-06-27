@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Grouping extends ArchimateElement implements IGrouping {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Grouping() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.GROUPING;
-    }
+		return IArchimatePackage.Literals.GROUPING;
+	}
 
 } //Grouping

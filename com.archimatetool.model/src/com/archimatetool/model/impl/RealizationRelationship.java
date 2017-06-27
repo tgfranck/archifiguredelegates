@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class RealizationRelationship extends ArchimateRelationship implements IRealizationRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RealizationRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.REALIZATION_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.REALIZATION_RELATIONSHIP;
+	}
 
 } //RealizationRelationship

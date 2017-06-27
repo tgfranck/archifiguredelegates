@@ -8,18 +8,10 @@ package com.archimatetool.editor.diagram.figures.elements;
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.geometry.Point;
-import org.eclipse.draw2d.geometry.PointList;
 import org.eclipse.draw2d.geometry.Rectangle;
-import org.eclipse.swt.graphics.Pattern;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.FigureUtils;
-import com.archimatetool.editor.diagram.figures.IFigureDelegate;
-import com.archimatetool.editor.preferences.IPreferenceConstants;
-import com.archimatetool.editor.preferences.Preferences;
-import com.archimatetool.editor.ui.ColorFactory;
 import com.archimatetool.model.IDiagramModelArchimateObject;
-
 
 /**
  * Figure for a Device
@@ -28,73 +20,17 @@ import com.archimatetool.model.IDiagramModelArchimateObject;
  */
 public class DeviceFigure extends AbstractTextControlContainerFigure {
     
-    protected static final int INDENT = 15;
-
-    protected IFigureDelegate fFigureDelegate;
+//    protected IFigureDelegate fFigureDelegate;
     
     public DeviceFigure() {
         super(TEXT_FLOW_CONTROL);
-        fFigureDelegate = new BoxFigureDelegate(this, 20 - getTextControlMarginWidth());
+//        fFigureDelegate = new BoxFigureDelegate(this, 20 - getTextControlMarginWidth());
     }
     
     @Override
     public void drawFigure(Graphics graphics) {
-        if(getFigureDelegate() != null) {
-            getFigureDelegate().drawFigure(graphics);
-            drawIcon(graphics);
-            return;
-        }
-
-        graphics.pushState();
-        
-        Rectangle bounds = getBounds().getCopy();
-        
-        int height_indent = bounds.height / 6;
-        
-        if(!isEnabled()) {
-            setDisabledState(graphics);
-        }
-        
-        // Bottom part
-        PointList points1 = new PointList();
-        points1.addPoint(bounds.x, bounds.y + bounds.height - 1);
-        points1.addPoint(bounds.x + INDENT , bounds.y + bounds.height - height_indent - 1);
-        points1.addPoint(bounds.x + bounds.width - INDENT, bounds.y + bounds.height - height_indent - 1);
-        points1.addPoint(bounds.x + bounds.width, bounds.y + bounds.height - 1);
-                
-        graphics.setBackgroundColor(ColorFactory.getDarkerColor(getFillColor()));
-        graphics.fillPolygon(points1);
-        
-        graphics.setForegroundColor(getLineColor());
-        graphics.drawLine(bounds.x, bounds.y + bounds.height - 1,
-                bounds.x + bounds.width, bounds.y + bounds.height - 1);
-        graphics.drawLine(bounds.x, bounds.y + bounds.height - 1,
-                bounds.x + INDENT, bounds.y + bounds.height - height_indent - 1);
-        graphics.drawLine(bounds.x + bounds.width, bounds.y + bounds.height - 1,
-                bounds.x + bounds.width - INDENT, bounds.y + bounds.height - height_indent - 1);
-
-        // Top part
-        Rectangle rect = new Rectangle(bounds.x, bounds.y, bounds.width, bounds.height - height_indent);
-
-        graphics.setBackgroundColor(getFillColor());
-
-        Pattern gradient = null;
-        if(Preferences.STORE.getBoolean(IPreferenceConstants.SHOW_GRADIENT)) {
-            gradient = FigureUtils.createGradient(graphics, bounds, getFillColor());
-            graphics.setBackgroundPattern(gradient);
-        }
-        
-        graphics.fillRoundRectangle(rect, 30, 30);
-        
-        if(gradient != null) {
-            gradient.dispose();
-        }
-
-        graphics.setForegroundColor(getLineColor());
-        rect = new Rectangle(bounds.x, bounds.y, bounds.width - 1, bounds.height - height_indent - 1);
-        graphics.drawRoundRectangle(rect, 30, 30);
-        
-        graphics.popState();
+        super.drawFigure(graphics);
+        drawIcon(graphics);
     }
     
     /**
@@ -128,11 +64,11 @@ public class DeviceFigure extends AbstractTextControlContainerFigure {
         return new Point(bounds.x + bounds.width - 31, bounds.y + 20);
     }
     
-    @Override
-    public IFigureDelegate getFigureDelegate() {
-        int type = getDiagramModelObject().getType();
-        return type == 1 ? fFigureDelegate : null;
-    }
+//    @Override
+//    public IFigureDelegate getFigureDelegate() {
+//        int type = getDiagramModelObject().getType();
+//        return type == 1 ? fFigureDelegate : null;
+//    }
     
     @Override
     public IDiagramModelArchimateObject getDiagramModelObject() {

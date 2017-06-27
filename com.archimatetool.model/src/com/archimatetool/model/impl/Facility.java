@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Facility extends ArchimateElement implements IFacility {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Facility() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.FACILITY;
-    }
+		return IArchimatePackage.Literals.FACILITY;
+	}
 
 } //Facility

@@ -18,35 +18,35 @@ package com.archimatetool.model;
  */
 public interface IDiagramModelArchimateComponent extends IConnectable {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     IArchimateConcept getArchimateConcept();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void setArchimateConcept(IArchimateConcept concept);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void addArchimateConceptToModel(IFolder parent);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void removeArchimateConceptFromModel();
 
 } // IDiagramModelArchimateComponent

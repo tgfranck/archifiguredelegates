@@ -20,22 +20,22 @@ import com.archimatetool.model.IBusinessObject;
  */
 public class BusinessObject extends ArchimateElement implements IBusinessObject {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessObject() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_OBJECT;
-    }
+		return IArchimatePackage.Literals.BUSINESS_OBJECT;
+	}
 
 } //BusinessObject

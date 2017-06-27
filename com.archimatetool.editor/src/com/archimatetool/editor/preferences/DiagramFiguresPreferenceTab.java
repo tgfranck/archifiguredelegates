@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.jface.layout.TableColumnLayout;
 import org.eclipse.jface.viewers.ColumnWeightData;
@@ -28,6 +29,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.TableItem;
 
+import com.archimatetool.editor.diagram.figures.IFigureDelegate;
 import com.archimatetool.editor.ui.FigureImagePreviewFactory;
 import com.archimatetool.editor.ui.factory.IArchimateElementUIProvider;
 import com.archimatetool.editor.ui.factory.IObjectUIProvider;
@@ -52,18 +54,18 @@ public class DiagramFiguresPreferenceTab implements IPreferenceConstants {
         String name;
         String preferenceKey;
         int chosenType = 0;
-        Image[] images = new Image[2];
+        Map<Image, Class<? extends IFigureDelegate>> images = null;
+        
         
         ImageChoice(IObjectUIProvider provider) {
             name = provider.getDefaultName();
             this.preferenceKey = IPreferenceConstants.DEFAULT_FIGURE_PREFIX + provider.providerFor().getName();
-            images[0] = FigureImagePreviewFactory.getFigurePreviewImageForClass(provider.providerFor());
-            images[1] = FigureImagePreviewFactory.getAlternateFigurePreviewImageForClass(provider.providerFor());
+            images = FigureImagePreviewFactory.getAlternativeFigurePreviewImagesForClass(provider.providerFor());            
             chosenType = Preferences.STORE.getInt(preferenceKey);
         }
         
         Image getImage(int index) {
-            return images[index];
+            return (Image) images.keySet().toArray()[index];
         }
     }
     

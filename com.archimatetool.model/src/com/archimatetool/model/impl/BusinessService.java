@@ -21,22 +21,22 @@ import com.archimatetool.model.IBusinessService;
  */
 public class BusinessService extends ArchimateElement implements IBusinessService {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessService() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_SERVICE;
-    }
+		return IArchimatePackage.Literals.BUSINESS_SERVICE;
+	}
 
 } //BusinessService

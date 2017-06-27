@@ -18,9 +18,6 @@ import org.eclipse.swt.graphics.Path;
  * @author Phillip Beauvoir
  */
 public class DriverFigure extends AbstractMotivationFigure {
-    
-    public DriverFigure() {
-    }
 
     @Override
     protected void drawFigure(Graphics graphics) {

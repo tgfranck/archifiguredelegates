@@ -29,30 +29,30 @@ public interface IJunction extends IArchimateElement {
     //String XOR_JUNCTION_TYPE = "xor";  //$NON-NLS-1$
     
     /**
-     * Returns the value of the '<em><b>Type</b></em>' attribute.
-     * The default value is <code>""</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Type</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Type</em>' attribute.
-     * @see #setType(String)
-     * @see com.archimatetool.model.IArchimatePackage#getJunction_Type()
-     * @model default=""
-     * @generated
-     */
+	 * @return the value of the '<em>Type</em>' attribute.
+	 * @see #setType(String)
+	 * @see com.archimatetool.model.IArchimatePackage#getJunction_Type()
+	 * @model default=""
+	 * @generated
+	 */
     String getType();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IJunction#getType <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IJunction#getType <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Type</em>' attribute.
-     * @see #getType()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Type</em>' attribute.
+	 * @see #getType()
+	 * @generated
+	 */
     void setType(String value);
 
 } // IJunction

@@ -396,9 +396,10 @@ public class OrthogonalAnchor extends ChopboxAnchor {
         }
         else if(figure instanceof InterfaceFigure) {
             // ellipse case
-            if(((InterfaceFigure)figure).getDiagramModelObject().getType() != 0) {
-                corner = figure.getSize();
-            }
+        	corner = figure.getSize();
+//            if(((InterfaceFigure)figure).getDiagramModelObject().getType() != 0) {
+//                corner = figure.getSize();
+//            }
         }
 		
 		return corner;

@@ -20,22 +20,22 @@ import com.archimatetool.model.IValue;
  */
 public class Value extends ArchimateElement implements IValue {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Value() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.VALUE;
-    }
+		return IArchimatePackage.Literals.VALUE;
+	}
 
 } //Value

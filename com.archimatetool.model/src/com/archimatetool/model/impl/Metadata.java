@@ -39,44 +39,44 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class Metadata extends EObjectImpl implements IMetadata {
     /**
-     * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getEntries()
-     * @generated
-     * @ordered
-     */
+	 * @see #getEntries()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<IProperty> entries;
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Metadata() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.METADATA;
-    }
+		return IArchimatePackage.Literals.METADATA;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<IProperty> getEntries() {
-        if (entries == null) {
-            entries = new EObjectContainmentEList<IProperty>(IProperty.class, this, IArchimatePackage.METADATA__ENTRIES);
-        }
-        return entries;
-    }
+		if (entries == null) {
+			entries = new EObjectContainmentEList<IProperty>(IProperty.class, this, IArchimatePackage.METADATA__ENTRIES);
+		}
+		return entries;
+	}
 
     public IProperty addEntry(String key, String value) {
         if(key == null) {
@@ -112,77 +112,77 @@ public class Metadata extends EObjectImpl implements IMetadata {
     }
     
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case IArchimatePackage.METADATA__ENTRIES:
-                return ((InternalEList<?>)getEntries()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case IArchimatePackage.METADATA__ENTRIES:
+				return ((InternalEList<?>)getEntries()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case IArchimatePackage.METADATA__ENTRIES:
-                return getEntries();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case IArchimatePackage.METADATA__ENTRIES:
+				return getEntries();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case IArchimatePackage.METADATA__ENTRIES:
-                getEntries().clear();
-                getEntries().addAll((Collection<? extends IProperty>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case IArchimatePackage.METADATA__ENTRIES:
+				getEntries().clear();
+				getEntries().addAll((Collection<? extends IProperty>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.METADATA__ENTRIES:
-                getEntries().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.METADATA__ENTRIES:
+				getEntries().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.METADATA__ENTRIES:
-                return entries != null && !entries.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.METADATA__ENTRIES:
+				return entries != null && !entries.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //Metadata

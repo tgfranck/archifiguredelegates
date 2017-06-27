@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TechnologyCollaboration extends ArchimateElement implements ITechnologyCollaboration {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyCollaboration() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_COLLABORATION;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_COLLABORATION;
+	}
 
 } //TechnologyCollaboration

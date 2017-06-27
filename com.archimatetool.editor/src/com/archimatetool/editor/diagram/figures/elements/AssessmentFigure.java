@@ -17,9 +17,6 @@ import org.eclipse.draw2d.geometry.Rectangle;
  * @author Phillip Beauvoir
  */
 public class AssessmentFigure extends AbstractMotivationFigure {
-    
-    public AssessmentFigure() {
-    }
 
     @Override
     protected void drawFigure(Graphics graphics) {

@@ -38,67 +38,67 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public abstract class Connectable extends DiagramModelComponent implements IConnectable {
     /**
-     * The cached value of the '{@link #getSourceConnections() <em>Source Connections</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSourceConnections() <em>Source Connections</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSourceConnections()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSourceConnections()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<IDiagramModelConnection> sourceConnections;
 
     /**
-     * The cached value of the '{@link #getTargetConnections() <em>Target Connections</em>}' reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTargetConnections() <em>Target Connections</em>}' reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getTargetConnections()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTargetConnections()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<IDiagramModelConnection> targetConnections;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Connectable() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.CONNECTABLE;
-    }
+		return IArchimatePackage.Literals.CONNECTABLE;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<IDiagramModelConnection> getSourceConnections() {
-        if (sourceConnections == null) {
-            sourceConnections = new EObjectContainmentEList<IDiagramModelConnection>(IDiagramModelConnection.class, this, IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS);
-        }
-        return sourceConnections;
-    }
+		if (sourceConnections == null) {
+			sourceConnections = new EObjectContainmentEList<IDiagramModelConnection>(IDiagramModelConnection.class, this, IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS);
+		}
+		return sourceConnections;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<IDiagramModelConnection> getTargetConnections() {
-        if (targetConnections == null) {
-            targetConnections = new EObjectEList<IDiagramModelConnection>(IDiagramModelConnection.class, this, IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS);
-        }
-        return targetConnections;
-    }
+		if (targetConnections == null) {
+			targetConnections = new EObjectEList<IDiagramModelConnection>(IDiagramModelConnection.class, this, IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS);
+		}
+		return targetConnections;
+	}
 
     /**
      * <!-- begin-user-doc -->
@@ -140,88 +140,88 @@ public abstract class Connectable extends DiagramModelComponent implements IConn
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
-                return ((InternalEList<?>)getSourceConnections()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
+				return ((InternalEList<?>)getSourceConnections()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
-                return getSourceConnections();
-            case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
-                return getTargetConnections();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
+				return getSourceConnections();
+			case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
+				return getTargetConnections();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
-                getSourceConnections().clear();
-                getSourceConnections().addAll((Collection<? extends IDiagramModelConnection>)newValue);
-                return;
-            case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
-                getTargetConnections().clear();
-                getTargetConnections().addAll((Collection<? extends IDiagramModelConnection>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
+				getSourceConnections().clear();
+				getSourceConnections().addAll((Collection<? extends IDiagramModelConnection>)newValue);
+				return;
+			case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
+				getTargetConnections().clear();
+				getTargetConnections().addAll((Collection<? extends IDiagramModelConnection>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
-                getSourceConnections().clear();
-                return;
-            case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
-                getTargetConnections().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
+				getSourceConnections().clear();
+				return;
+			case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
+				getTargetConnections().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
-                return sourceConnections != null && !sourceConnections.isEmpty();
-            case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
-                return targetConnections != null && !targetConnections.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.CONNECTABLE__SOURCE_CONNECTIONS:
+				return sourceConnections != null && !sourceConnections.isEmpty();
+			case IArchimatePackage.CONNECTABLE__TARGET_CONNECTIONS:
+				return targetConnections != null && !targetConnections.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //Connectable

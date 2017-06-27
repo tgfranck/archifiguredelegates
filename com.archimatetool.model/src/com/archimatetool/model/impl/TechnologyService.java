@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TechnologyService extends ArchimateElement implements ITechnologyService {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyService() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_SERVICE;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_SERVICE;
+	}
 
 } //TechnologyService

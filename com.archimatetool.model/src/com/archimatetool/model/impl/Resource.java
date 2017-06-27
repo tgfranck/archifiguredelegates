@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Resource extends ArchimateElement implements IResource {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Resource() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.RESOURCE;
-    }
+		return IArchimatePackage.Literals.RESOURCE;
+	}
 
 } //Resource

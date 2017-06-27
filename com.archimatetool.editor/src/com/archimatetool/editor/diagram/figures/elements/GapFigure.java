@@ -10,20 +10,13 @@ import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 
-
-
-
 /**
  * Gap Figure
  * 
  * @author Phillip Beauvoir
  */
-public class GapFigure
-extends DeliverableFigure {
-    
-    public GapFigure() {
-    }
-    
+public class GapFigure extends DeliverableFigure {
+
     @Override
     protected void drawFigure(Graphics graphics) {
         super.drawFigure(graphics);

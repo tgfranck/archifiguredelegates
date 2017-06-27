@@ -16,6 +16,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 
+import com.archimatetool.editor.diagram.figures.factory.FigureDelegateProviderFactory;
 import com.archimatetool.editor.preferences.IPreferenceConstants;
 import com.archimatetool.editor.preferences.Preferences;
 import com.archimatetool.editor.ui.ArchiLabelProvider;
@@ -45,10 +46,6 @@ implements IDiagramModelObjectFigure {
     private Color fFontColor;
     private Color fLineColor;
     
-    
-    // Delegate to do drawing
-    private IFigureDelegate fFigureDelegate;
-    
     protected AbstractDiagramModelObjectFigure() {
     }
     
@@ -68,11 +65,7 @@ implements IDiagramModelObjectFigure {
     }
     
     public IFigureDelegate getFigureDelegate() {
-        return fFigureDelegate;
-    }
-    
-    public void setFigureDelegate(IFigureDelegate figureDelegate) {
-        fFigureDelegate = figureDelegate;
+    	return FigureDelegateProviderFactory.INSTANCE.getProvider(this).createFigureDelegate(this);
     }
     
     /**

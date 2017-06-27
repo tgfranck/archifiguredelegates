@@ -20,22 +20,22 @@ import com.archimatetool.model.IArchimatePackage;
  */
 public class ApplicationComponent extends ArchimateElement implements IApplicationComponent {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationComponent() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_COMPONENT;
-    }
+		return IArchimatePackage.Literals.APPLICATION_COMPONENT;
+	}
 
 } //ApplicationComponent

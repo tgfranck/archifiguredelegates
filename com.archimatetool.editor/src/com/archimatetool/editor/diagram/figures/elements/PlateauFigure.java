@@ -12,10 +12,6 @@ import org.eclipse.draw2d.geometry.Rectangle;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
 
-
-
-
-
 /**
  * Plateau Figure
  * 
@@ -25,7 +21,7 @@ public class PlateauFigure extends AbstractTextControlContainerFigure {
     
     public PlateauFigure() {
         super(TEXT_FLOW_CONTROL);
-        setFigureDelegate(new BoxFigureDelegate(this, 22 - getTextControlMarginWidth()));
+        //setFigureDelegate(new BoxFigureDelegate(this, 22 - getTextControlMarginWidth()));
     }
     
     

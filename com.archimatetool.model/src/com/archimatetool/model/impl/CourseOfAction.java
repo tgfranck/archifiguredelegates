@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class CourseOfAction extends ArchimateElement implements ICourseOfAction {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CourseOfAction() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.COURSE_OF_ACTION;
-    }
+		return IArchimatePackage.Literals.COURSE_OF_ACTION;
+	}
 
 } //CourseOfAction

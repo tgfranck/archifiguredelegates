@@ -20,22 +20,22 @@ import com.archimatetool.model.IPlateau;
  */
 public class Plateau extends ArchimateElement implements IPlateau {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Plateau() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.PLATEAU;
-    }
+		return IArchimatePackage.Literals.PLATEAU;
+	}
 
 } //Plateau

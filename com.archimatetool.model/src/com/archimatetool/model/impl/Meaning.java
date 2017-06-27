@@ -20,22 +20,22 @@ import com.archimatetool.model.IMeaning;
  */
 public class Meaning extends ArchimateElement implements IMeaning {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Meaning() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.MEANING;
-    }
+		return IArchimatePackage.Literals.MEANING;
+	}
 
 } //Meaning

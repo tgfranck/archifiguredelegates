@@ -21,12 +21,12 @@ public abstract class AbstractInterfaceUIProvider extends AbstractArchimateEleme
     @Override
     public Dimension getDefaultSize() {
         // Square size
-        if(instance instanceof IDiagramModelArchimateObject) {
-            int figureType = ((IDiagramModelArchimateObject)instance).getType();
-            if(figureType == 1) {
-                return DefaultSquareSize;
-            }
-        }
+//        if(instance instanceof IDiagramModelArchimateObject) {
+//            int figureType = ((IDiagramModelArchimateObject)instance).getType();
+//            if(figureType == 1) {
+//                return DefaultSquareSize;
+//            }
+//        }
         
         return super.getDefaultSize();
     }
@@ -46,8 +46,4 @@ public abstract class AbstractInterfaceUIProvider extends AbstractArchimateEleme
         return userSize;
     }
 
-    @Override
-    public boolean hasAlternateFigure() {
-        return true;
-    }
 }

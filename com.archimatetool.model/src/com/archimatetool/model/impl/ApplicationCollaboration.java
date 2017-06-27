@@ -20,22 +20,22 @@ import com.archimatetool.model.IArchimatePackage;
  */
 public class ApplicationCollaboration extends ArchimateElement implements IApplicationCollaboration {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationCollaboration() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_COLLABORATION;
-    }
+		return IArchimatePackage.Literals.APPLICATION_COLLABORATION;
+	}
 
 } //ApplicationCollaboration

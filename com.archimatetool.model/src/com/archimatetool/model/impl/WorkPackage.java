@@ -20,22 +20,22 @@ import com.archimatetool.model.IWorkPackage;
  */
 public class WorkPackage extends ArchimateElement implements IWorkPackage {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected WorkPackage() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.WORK_PACKAGE;
-    }
+		return IArchimatePackage.Literals.WORK_PACKAGE;
+	}
 
 } //WorkPackage

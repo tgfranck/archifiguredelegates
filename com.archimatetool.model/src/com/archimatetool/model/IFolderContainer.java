@@ -27,20 +27,20 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface IFolderContainer extends EObject {
     /**
-     * Returns the value of the '<em><b>Folders</b></em>' containment reference list.
-     * The list contents are of type {@link com.archimatetool.model.IFolder}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Folders</b></em>' containment reference list.
+	 * The list contents are of type {@link com.archimatetool.model.IFolder}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Folders</em>' containment reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Folders</em>' containment reference list.
-     * @see com.archimatetool.model.IArchimatePackage#getFolderContainer_Folders()
-     * @model containment="true"
-     *        extendedMetaData="name='folder' kind='element'"
-     * @generated
-     */
+	 * @return the value of the '<em>Folders</em>' containment reference list.
+	 * @see com.archimatetool.model.IArchimatePackage#getFolderContainer_Folders()
+	 * @model containment="true"
+	 *        extendedMetaData="name='folder' kind='element'"
+	 * @generated
+	 */
     EList<IFolder> getFolders();
 
 } // IFolderContainer

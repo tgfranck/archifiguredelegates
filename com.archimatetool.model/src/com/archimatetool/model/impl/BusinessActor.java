@@ -20,22 +20,22 @@ import com.archimatetool.model.IBusinessActor;
  */
 public class BusinessActor extends ArchimateElement implements IBusinessActor {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessActor() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_ACTOR;
-    }
+		return IArchimatePackage.Literals.BUSINESS_ACTOR;
+	}
 
 } //BusinessActor

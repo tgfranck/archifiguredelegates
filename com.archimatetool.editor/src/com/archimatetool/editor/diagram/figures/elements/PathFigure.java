@@ -12,10 +12,6 @@ import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RectangleFigureDelegate;
-
-
-
 
 /**
  * Path Figure
@@ -27,7 +23,7 @@ public class PathFigure extends AbstractTextControlContainerFigure {
     public PathFigure() {
         super(TEXT_FLOW_CONTROL);
         // Use a Rectangle Figure Delegate to Draw
-        setFigureDelegate(new RectangleFigureDelegate(this, 22 - getTextControlMarginWidth()));
+        //setFigureDelegate(new RectangleFigureDelegate(this, 22 - getTextControlMarginWidth()));
     }
     
     @Override

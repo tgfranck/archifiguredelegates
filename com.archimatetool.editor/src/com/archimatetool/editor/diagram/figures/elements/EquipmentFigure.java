@@ -25,7 +25,7 @@ public class EquipmentFigure extends AbstractTextControlContainerFigure {
     
     public EquipmentFigure() {
         super(TEXT_FLOW_CONTROL);
-        setFigureDelegate(new BoxFigureDelegate(this, 22 - getTextControlMarginWidth()));
+        //setFigureDelegate(new BoxFigureDelegate(this, 22 - getTextControlMarginWidth()));
     }
     
     

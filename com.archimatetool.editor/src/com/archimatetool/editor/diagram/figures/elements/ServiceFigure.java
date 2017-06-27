@@ -13,12 +13,7 @@ import org.eclipse.draw2d.geometry.Rectangle;
 
 import com.archimatetool.editor.diagram.editparts.RoundedRectangleAnchor;
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.IFigureDelegate;
-import com.archimatetool.editor.diagram.figures.RoundedRectangleFigureDelegate;
 import com.archimatetool.model.IDiagramModelArchimateObject;
-
-
-
 
 /**
  * Service Figure
@@ -26,24 +21,18 @@ import com.archimatetool.model.IDiagramModelArchimateObject;
  * @author Phillip Beauvoir
  */
 public class ServiceFigure extends AbstractTextControlContainerFigure {
-    
-    protected IFigureDelegate fFigureDelegate1;
-    protected IFigureDelegate fFigureDelegate2;
+
 
     public ServiceFigure() {
         super(TEXT_FLOW_CONTROL);
-        fFigureDelegate1 = new RoundedRectangleFigureDelegate(this, 22 - getTextControlMarginWidth());
-        fFigureDelegate2 = new ServiceFigureDelegate(this);
+//        fFigureDelegate1 = new RoundedRectangleFigureDelegate(this, 22 - getTextControlMarginWidth());
+//        fFigureDelegate2 = new ServiceFigureDelegate(this);
     }
     
     @Override
     protected void drawFigure(Graphics graphics) {
         super.drawFigure(graphics);
-        
-        int type = getDiagramModelObject().getType();
-        if(type == 0) {
-            drawIcon(graphics);
-        }
+        drawIcon(graphics);        
     }
     
     /**
@@ -70,12 +59,12 @@ public class ServiceFigure extends AbstractTextControlContainerFigure {
         return new Point(bounds.x + bounds.width - 21, bounds.y + 7);
     }
 
-    @Override
-    public IFigureDelegate getFigureDelegate() {
-        int type = getDiagramModelObject().getType();
-        return type == 0 ? fFigureDelegate1 : fFigureDelegate2;
-    }
-    
+//    @Override
+//    public IFigureDelegate getFigureDelegate() {
+//        int type = getDiagramModelObject().getType();
+//        return type == 0 ? fFigureDelegate1 : fFigureDelegate2;
+//    }
+//    
     @Override
     public ConnectionAnchor getDefaultConnectionAnchor() {
         return new RoundedRectangleAnchor(this);

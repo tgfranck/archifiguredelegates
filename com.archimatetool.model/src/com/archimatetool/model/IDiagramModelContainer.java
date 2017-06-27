@@ -25,20 +25,20 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface IDiagramModelContainer extends IDiagramModelComponent {
     /**
-     * Returns the value of the '<em><b>Children</b></em>' containment reference list.
-     * The list contents are of type {@link com.archimatetool.model.IDiagramModelObject}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Children</b></em>' containment reference list.
+	 * The list contents are of type {@link com.archimatetool.model.IDiagramModelObject}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Children</em>' reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Children</em>' containment reference list.
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelContainer_Children()
-     * @model containment="true"
-     *        extendedMetaData="name='child' kind='element'"
-     * @generated
-     */
+	 * @return the value of the '<em>Children</em>' containment reference list.
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelContainer_Children()
+	 * @model containment="true"
+	 *        extendedMetaData="name='child' kind='element'"
+	 * @generated
+	 */
     EList<IDiagramModelObject> getChildren();
 
 } // IDiagramModelContainer

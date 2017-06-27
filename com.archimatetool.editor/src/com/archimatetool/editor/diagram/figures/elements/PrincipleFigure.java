@@ -19,9 +19,6 @@ import org.eclipse.swt.graphics.Path;
  */
 public class PrincipleFigure extends AbstractMotivationFigure {
     
-    public PrincipleFigure() {
-    }
-
     @Override
     protected void drawFigure(Graphics graphics) {
         super.drawFigure(graphics);

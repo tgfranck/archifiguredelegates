@@ -20,22 +20,22 @@ import com.archimatetool.model.IArtifact;
  */
 public class Artifact extends ArchimateElement implements IArtifact {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Artifact() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ARTIFACT;
-    }
+		return IArchimatePackage.Literals.ARTIFACT;
+	}
 
 } //Artifact

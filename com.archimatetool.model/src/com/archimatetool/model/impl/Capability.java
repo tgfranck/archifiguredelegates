@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Capability extends ArchimateElement implements ICapability {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Capability() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.CAPABILITY;
-    }
+		return IArchimatePackage.Literals.CAPABILITY;
+	}
 
 } //Capability

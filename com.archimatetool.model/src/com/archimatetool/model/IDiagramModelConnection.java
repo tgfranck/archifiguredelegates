@@ -65,172 +65,172 @@ public interface IDiagramModelConnection extends IConnectable, IFontAttribute, I
 
     
     /**
-     * Returns the value of the '<em><b>Text</b></em>' attribute.
-     * The default value is <code>""</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Text</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * <!-- begin-user-doc -->
      * @deprecated As of version 2.1.0 the connection text is now the "name" attribute
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Text</em>' attribute.
-     * @see #setText(String)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Text()
-     * @model default="" transient="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Text</em>' attribute.
+	 * @see #setText(String)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Text()
+	 * @model default="" transient="true"
+	 * @generated
+	 */
     String getText();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getText <em>Text</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getText <em>Text</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * @deprecated As of version 2.1.0 the connection text is now the "name" attribute
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Text</em>' attribute.
-     * @see #getText()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Text</em>' attribute.
+	 * @see #getText()
+	 * @generated
+	 */
     void setText(String value);
 
     /**
-     * Returns the value of the '<em><b>Text Position</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Text Position</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Text Position</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Text Position</em>' attribute.
-     * @see #setTextPosition(int)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_TextPosition()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Text Position</em>' attribute.
+	 * @see #setTextPosition(int)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_TextPosition()
+	 * @model
+	 * @generated
+	 */
     int getTextPosition();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getTextPosition <em>Text Position</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getTextPosition <em>Text Position</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Text Position</em>' attribute.
-     * @see #getTextPosition()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Text Position</em>' attribute.
+	 * @see #getTextPosition()
+	 * @generated
+	 */
     void setTextPosition(int value);
 
     /**
-     * Returns the value of the '<em><b>Source</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Source</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Source</em>' reference.
-     * @see #setSource(IConnectable)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Source()
-     * @model resolveProxies="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Source</em>' reference.
+	 * @see #setSource(IConnectable)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Source()
+	 * @model resolveProxies="false"
+	 * @generated
+	 */
     IConnectable getSource();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getSource <em>Source</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getSource <em>Source</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Source</em>' reference.
-     * @see #getSource()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Source</em>' reference.
+	 * @see #getSource()
+	 * @generated
+	 */
     void setSource(IConnectable value);
 
     /**
-     * Returns the value of the '<em><b>Target</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Target</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Target</em>' reference.
-     * @see #setTarget(IConnectable)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Target()
-     * @model resolveProxies="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Target</em>' reference.
+	 * @see #setTarget(IConnectable)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Target()
+	 * @model resolveProxies="false"
+	 * @generated
+	 */
     IConnectable getTarget();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getTarget <em>Target</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getTarget <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Target</em>' reference.
-     * @see #getTarget()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Target</em>' reference.
+	 * @see #getTarget()
+	 * @generated
+	 */
     void setTarget(IConnectable value);
 
     /**
-     * Returns the value of the '<em><b>Bendpoints</b></em>' containment reference list.
-     * The list contents are of type {@link com.archimatetool.model.IDiagramModelBendpoint}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Bendpoints</b></em>' containment reference list.
+	 * The list contents are of type {@link com.archimatetool.model.IDiagramModelBendpoint}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Bendpoints</em>' reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Bendpoints</em>' containment reference list.
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Bendpoints()
-     * @model containment="true"
-     *        extendedMetaData="name='bendpoint' kind='element'"
-     * @generated
-     */
+	 * @return the value of the '<em>Bendpoints</em>' containment reference list.
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Bendpoints()
+	 * @model containment="true"
+	 *        extendedMetaData="name='bendpoint' kind='element'"
+	 * @generated
+	 */
     EList<IDiagramModelBendpoint> getBendpoints();
 
     /**
-     * Returns the value of the '<em><b>Type</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Type</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Type</em>' attribute.
-     * @see #setType(int)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Type()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Type</em>' attribute.
+	 * @see #setType(int)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelConnection_Type()
+	 * @model
+	 * @generated
+	 */
     int getType();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getType <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelConnection#getType <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Type</em>' attribute.
-     * @see #getType()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Type</em>' attribute.
+	 * @see #getType()
+	 * @generated
+	 */
     void setType(int value);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void connect(IConnectable source, IConnectable target);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void disconnect();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void reconnect();
 } // IDiagramModelConnection

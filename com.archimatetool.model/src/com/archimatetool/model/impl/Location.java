@@ -20,22 +20,22 @@ import com.archimatetool.model.ILocation;
  */
 public class Location extends ArchimateElement implements ILocation {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Location() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.LOCATION;
-    }
+		return IArchimatePackage.Literals.LOCATION;
+	}
 
 } //Location

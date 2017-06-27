@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Path extends ArchimateElement implements IPath {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Path() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.PATH;
-    }
+		return IArchimatePackage.Literals.PATH;
+	}
 
 } //Path

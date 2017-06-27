@@ -5,12 +5,19 @@
  */
 package com.archimatetool.editor.ui;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.gef.GraphicalEditPart;
 import org.eclipse.jface.resource.ImageRegistry;
 import org.eclipse.swt.graphics.Image;
 
-import com.archimatetool.editor.diagram.figures.IDiagramModelObjectFigure;
+import com.archimatetool.editor.diagram.figures.AbstractDiagramModelObjectFigure;
+import com.archimatetool.editor.diagram.figures.IFigureDelegate;
+import com.archimatetool.editor.diagram.figures.factory.FigureDelegateProviderFactory;
+import com.archimatetool.editor.diagram.figures.factory.IFigureDelegateProvider;
 import com.archimatetool.editor.diagram.util.DiagramUtils;
 import com.archimatetool.editor.ui.factory.IArchimateElementUIProvider;
 import com.archimatetool.editor.ui.factory.IGraphicalObjectUIProvider;
@@ -33,62 +40,52 @@ public class FigureImagePreviewFactory {
     
     /**
      * @param eClass
-     * @return A preview image of the graphical Figure used by eClass
+     * @return A set of preview images of the alternate graphical Figures registered for the eClass.
+     *         If there is no alternate graphical Figure, an empty set is returned
      */
-    public static Image getFigurePreviewImageForClass(EClass eClass) {
-        IGraphicalObjectUIProvider provider = (IGraphicalObjectUIProvider)ObjectUIFactory.INSTANCE.getProviderForClass(eClass);
-        
-        if(provider instanceof IArchimateElementUIProvider ) {
-            return getPreviewImage((IArchimateElementUIProvider)provider, 0);
-        }
-        
-        return null;
-    }
     
-    /**
-     * @param eClass
-     * @return A preview image of the alternate graphical Figure used by eClass.
-     *         If there is no alternate graphical Figure return null
-     */
-    public static Image getAlternateFigurePreviewImageForClass(EClass eClass) {
-        IGraphicalObjectUIProvider provider = (IGraphicalObjectUIProvider)ObjectUIFactory.INSTANCE.getProviderForClass(eClass);
+    public static Map<Image, Class<? extends IFigureDelegate>> getAlternativeFigurePreviewImagesForClass(EClass eClass){
+    	Map<Image, Class<? extends IFigureDelegate>> result = null;
+    	
+    	IGraphicalObjectUIProvider provider = (IGraphicalObjectUIProvider)ObjectUIFactory.INSTANCE.getProviderForClass(eClass);
         
         if(provider instanceof IArchimateElementUIProvider && ((IArchimateElementUIProvider)provider).hasAlternateFigure()) {
-            return getPreviewImage((IArchimateElementUIProvider)provider, 1);
+            result = getPreviewImages((IArchimateElementUIProvider)provider);
         }
         
-        return null;
+        return result;
     }
-
-    private static Image getPreviewImage(IArchimateElementUIProvider provider, int type) {
-        EClass eClass = provider.providerFor();
+    
+    private static Map<Image, Class<? extends IFigureDelegate>> getPreviewImages(IArchimateElementUIProvider uiProvider){
+    	
+    	Map<Image, Class<? extends IFigureDelegate>> result = new LinkedHashMap<Image, Class<? extends IFigureDelegate>>();
+    	
+    	EClass eClass = uiProvider.providerFor();
+    	
+    	IDiagramModelArchimateObject dmo = IArchimateFactory.eINSTANCE.createDiagramModelArchimateObject();
+    	
+        dmo.setArchimateElement((IArchimateElement)IArchimateFactory.eINSTANCE.create(eClass));
+        dmo.setName(uiProvider.getDefaultName());
+        dmo.setTextPosition(ITextPosition.TEXT_POSITION_TOP);
         
-        String key = eClass.getName() + type;
+        ColorFactory.setDefaultColors(dmo);
+
+        uiProvider.setInstance(dmo);
+
+        GraphicalEditPart editPart = (GraphicalEditPart)uiProvider.createEditPart();
+        editPart.setModel(dmo);
         
-        Image image = imageRegistry.get(key);
+        AbstractDiagramModelObjectFigure figure = (AbstractDiagramModelObjectFigure)editPart.getFigure();
+        figure.setBounds(new Rectangle(0,0,100,100));
         
-        if(image == null) {
-            IDiagramModelArchimateObject dmo = IArchimateFactory.eINSTANCE.createDiagramModelArchimateObject();
-            dmo.setArchimateElement((IArchimateElement)IArchimateFactory.eINSTANCE.create(eClass));
-            dmo.setName(provider.getDefaultName());
-            dmo.setTextPosition(ITextPosition.TEXT_POSITION_TOP);
-            ColorFactory.setDefaultColors(dmo);
-            dmo.setType(type);
-
-            provider.setInstance(dmo);
-
-            GraphicalEditPart editPart = (GraphicalEditPart)provider.createEditPart();
-            editPart.setModel(dmo);
-            
-            IDiagramModelObjectFigure figure = (IDiagramModelObjectFigure)editPart.getFigure();
-            figure.setSize(provider.getDefaultSize());
-            figure.refreshVisuals();
-            figure.validate();
-
-            image = DiagramUtils.createImage(figure, 1, 0);
-            imageRegistry.put(key, image);
+        IFigureDelegateProvider delegateProvider = FigureDelegateProviderFactory.INSTANCE.getProvider(figure);
+        
+        for(Class<? extends IFigureDelegate> alternative : delegateProvider.getFigureDelegateRegister()){
+        	dmo.setFigureDelegateType(alternative);
+        	result.put(DiagramUtils.createImage(figure, 1, 0), alternative);
         }
-        
-        return image;
+		
+        return result;
+    	
     }
 }

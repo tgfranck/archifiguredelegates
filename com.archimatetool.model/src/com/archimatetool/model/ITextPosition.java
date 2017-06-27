@@ -30,29 +30,29 @@ public interface ITextPosition extends EObject {
     int TEXT_POSITION_BOTTOM = 2;
     
     /**
-     * Returns the value of the '<em><b>Text Position</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Text Position</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Text Position</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Text Position</em>' attribute.
-     * @see #setTextPosition(int)
-     * @see com.archimatetool.model.IArchimatePackage#getTextPosition_TextPosition()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Text Position</em>' attribute.
+	 * @see #setTextPosition(int)
+	 * @see com.archimatetool.model.IArchimatePackage#getTextPosition_TextPosition()
+	 * @model
+	 * @generated
+	 */
     int getTextPosition();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.ITextPosition#getTextPosition <em>Text Position</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.ITextPosition#getTextPosition <em>Text Position</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Text Position</em>' attribute.
-     * @see #getTextPosition()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Text Position</em>' attribute.
+	 * @see #getTextPosition()
+	 * @generated
+	 */
     void setTextPosition(int value);
 
 } // ITextPosition

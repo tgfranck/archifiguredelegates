@@ -20,22 +20,22 @@ import com.archimatetool.model.IBusinessEvent;
  */
 public class BusinessEvent extends ArchimateElement implements IBusinessEvent {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessEvent() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_EVENT;
-    }
+		return IArchimatePackage.Literals.BUSINESS_EVENT;
+	}
 
 } //BusinessEvent

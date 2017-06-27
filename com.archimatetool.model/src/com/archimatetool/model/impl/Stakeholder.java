@@ -20,22 +20,22 @@ import com.archimatetool.model.IStakeholder;
  */
 public class Stakeholder extends ArchimateElement implements IStakeholder {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Stakeholder() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.STAKEHOLDER;
-    }
+		return IArchimatePackage.Literals.STAKEHOLDER;
+	}
 
 } //Stakeholder

@@ -19,14 +19,14 @@ package com.archimatetool.model;
  */
 public interface IDiagramModelComponent extends IIdentifier, ICloneable, IAdapter, INameable {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Diagram Model</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     IDiagramModel getDiagramModel();
 } // IDiagramModelComponent

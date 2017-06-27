@@ -18,9 +18,6 @@ import org.eclipse.swt.graphics.Path;
  * @author Phillip Beauvoir
  */
 public class StakeholderFigure extends AbstractMotivationFigure {
-    
-    public StakeholderFigure() {
-    }
 
     @Override
     protected void drawFigure(Graphics graphics) {

@@ -29,29 +29,29 @@ public interface IDiagramModelNote extends IDiagramModelObject, ITextContent, IT
     int BORDER_NONE = 2;
 
     /**
-     * Returns the value of the '<em><b>Border Type</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Border Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Border Type</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Border Type</em>' attribute.
-     * @see #setBorderType(int)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelNote_BorderType()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Border Type</em>' attribute.
+	 * @see #setBorderType(int)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelNote_BorderType()
+	 * @model
+	 * @generated
+	 */
     int getBorderType();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelNote#getBorderType <em>Border Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelNote#getBorderType <em>Border Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Border Type</em>' attribute.
-     * @see #getBorderType()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Border Type</em>' attribute.
+	 * @see #getBorderType()
+	 * @generated
+	 */
     void setBorderType(int value);
 
 } // IDiagramModelNote

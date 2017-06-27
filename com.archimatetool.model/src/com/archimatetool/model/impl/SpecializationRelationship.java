@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class SpecializationRelationship extends ArchimateRelationship implements ISpecializationRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SpecializationRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.SPECIALIZATION_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.SPECIALIZATION_RELATIONSHIP;
+	}
 
 } //SpecializationRelationship

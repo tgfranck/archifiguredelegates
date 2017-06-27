@@ -33,23 +33,23 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public abstract class ArchimateRelationship extends ArchimateConcept implements IArchimateRelationship {
     /**
-     * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSource()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSource()
+	 * @generated
+	 * @ordered
+	 */
     protected IArchimateConcept source;
 
     /**
-     * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getTarget()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTarget()
+	 * @generated
+	 * @ordered
+	 */
     protected IArchimateConcept target;
 
     /**
@@ -58,32 +58,32 @@ public abstract class ArchimateRelationship extends ArchimateConcept implements 
     private EList<IDiagramModelArchimateConnection> diagramConnections;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ArchimateRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ARCHIMATE_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.ARCHIMATE_RELATIONSHIP;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public IArchimateConcept getSource() {
-        return source;
-    }
+		return source;
+	}
 
     /**
      * <!-- begin-user-doc -->
@@ -106,13 +106,13 @@ public abstract class ArchimateRelationship extends ArchimateConcept implements 
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public IArchimateConcept getTarget() {
-        return target;
-    }
+		return target;
+	}
 
     /**
      * <!-- begin-user-doc -->
@@ -192,71 +192,71 @@ public abstract class ArchimateRelationship extends ArchimateConcept implements 
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
-                return getSource();
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
-                return getTarget();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
+				return getSource();
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
+				return getTarget();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
-                setSource((IArchimateConcept)newValue);
-                return;
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
-                setTarget((IArchimateConcept)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
+				setSource((IArchimateConcept)newValue);
+				return;
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
+				setTarget((IArchimateConcept)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
-                setSource((IArchimateConcept)null);
-                return;
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
-                setTarget((IArchimateConcept)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
+				setSource((IArchimateConcept)null);
+				return;
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
+				setTarget((IArchimateConcept)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
-                return source != null;
-            case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
-                return target != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__SOURCE:
+				return source != null;
+			case IArchimatePackage.ARCHIMATE_RELATIONSHIP__TARGET:
+				return target != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ArchimateRelationship

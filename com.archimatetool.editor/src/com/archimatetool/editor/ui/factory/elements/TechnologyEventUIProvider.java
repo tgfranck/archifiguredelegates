@@ -55,8 +55,4 @@ public class TechnologyEventUIProvider extends AbstractArchimateElementUIProvide
         return ColorFactory.get(201, 231, 183);
     }
     
-    @Override
-    public boolean hasAlternateFigure() {
-        return true;
-    }
 }

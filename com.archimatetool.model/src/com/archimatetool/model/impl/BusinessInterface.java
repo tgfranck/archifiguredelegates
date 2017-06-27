@@ -20,22 +20,22 @@ import com.archimatetool.model.IBusinessInterface;
  */
 public class BusinessInterface extends ArchimateElement implements IBusinessInterface {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessInterface() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_INTERFACE;
-    }
+		return IArchimatePackage.Literals.BUSINESS_INTERFACE;
+	}
 
 } //BusinessInterface

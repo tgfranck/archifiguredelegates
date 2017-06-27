@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ApplicationProcess extends ArchimateElement implements IApplicationProcess {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationProcess() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_PROCESS;
-    }
+		return IArchimatePackage.Literals.APPLICATION_PROCESS;
+	}
 
 } //ApplicationProcess

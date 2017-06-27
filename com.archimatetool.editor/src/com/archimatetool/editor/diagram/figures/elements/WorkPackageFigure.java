@@ -6,14 +6,9 @@
 package com.archimatetool.editor.diagram.figures.elements;
 
 import org.eclipse.draw2d.ConnectionAnchor;
-import org.eclipse.draw2d.geometry.Dimension;
 
 import com.archimatetool.editor.diagram.editparts.RoundedRectangleAnchor;
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RoundedRectangleFigureDelegate;
-
-
-
 
 /**
  * Work Package Figure
@@ -26,9 +21,9 @@ public class WorkPackageFigure extends AbstractTextControlContainerFigure {
         super(TEXT_FLOW_CONTROL);
         
         // Use a Rounded Rectangle Figure Delegate to Draw
-        RoundedRectangleFigureDelegate figureDelegate = new RoundedRectangleFigureDelegate(this);
-        figureDelegate.setArc(new Dimension(10, 10));
-        setFigureDelegate(figureDelegate);
+//        RoundedRectangleFigureDelegate figureDelegate = new RoundedRectangleFigureDelegate(this);
+//        figureDelegate.setArc(new Dimension(10, 10));
+//        setFigureDelegate(figureDelegate);
     }
     
     @Override

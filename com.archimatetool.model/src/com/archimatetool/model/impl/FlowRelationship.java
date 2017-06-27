@@ -20,22 +20,22 @@ import com.archimatetool.model.IFlowRelationship;
  */
 public class FlowRelationship extends ArchimateRelationship implements IFlowRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FlowRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.FLOW_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.FLOW_RELATIONSHIP;
+	}
 
 } //FlowRelationship

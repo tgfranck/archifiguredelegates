@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ImplementationEvent extends ArchimateElement implements IImplementationEvent {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ImplementationEvent() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.IMPLEMENTATION_EVENT;
-    }
+		return IArchimatePackage.Literals.IMPLEMENTATION_EVENT;
+	}
 
 } //ImplementationEvent

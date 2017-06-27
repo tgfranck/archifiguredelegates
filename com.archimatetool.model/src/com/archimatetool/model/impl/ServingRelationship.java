@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ServingRelationship extends ArchimateRelationship implements IServingRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ServingRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.SERVING_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.SERVING_RELATIONSHIP;
+	}
 
 } //ServingRelationship

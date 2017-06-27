@@ -11,7 +11,6 @@ import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RectangleFigureDelegate;
 
 
 /**
@@ -24,7 +23,7 @@ public class BusinessActorFigure extends AbstractTextControlContainerFigure {
     public BusinessActorFigure() {
         super(TEXT_FLOW_CONTROL);
         // Use a Rectangle Figure Delegate to Draw
-        setFigureDelegate(new RectangleFigureDelegate(this, 17 - getTextControlMarginWidth()));
+        //setFigureDelegate(new RectangleFigureDelegate(this, 17 - getTextControlMarginWidth()));
     }
     
     @Override

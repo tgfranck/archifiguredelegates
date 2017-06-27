@@ -53,10 +53,10 @@ public abstract class AbstractArchimateElementEditPart extends AbstractConnected
     @Override
     protected void eCoreChanged(Notification msg) {
         // Update Connection Anchors if Figure Type changes
-        if(msg.getFeature() == IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE
-                && msg.getNotifier() == getModel()) {
-            refreshConnectionAnchors();
-        }
+//        if(msg.getFeature() == IArchimatePackage.Literals.DIAGRAM_MODEL_ARCHIMATE_OBJECT__TYPE
+//                && msg.getNotifier() == getModel()) {
+//            refreshConnectionAnchors();
+//        }
 
         switch(msg.getEventType()) {
             // Children added or removed or moved - need to refresh connections

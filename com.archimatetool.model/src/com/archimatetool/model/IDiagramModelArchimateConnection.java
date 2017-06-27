@@ -24,29 +24,29 @@ package com.archimatetool.model;
  */
 public interface IDiagramModelArchimateConnection extends IDiagramModelConnection, IDiagramModelArchimateComponent {
     /**
-     * Returns the value of the '<em><b>Archimate Relationship</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Archimate Relationship</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Archimate Relationship</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Archimate Relationship</em>' reference.
-     * @see #setArchimateRelationship(IArchimateRelationship)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelArchimateConnection_ArchimateRelationship()
-     * @model resolveProxies="false" volatile="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Archimate Relationship</em>' reference.
+	 * @see #setArchimateRelationship(IArchimateRelationship)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelArchimateConnection_ArchimateRelationship()
+	 * @model resolveProxies="false" volatile="true"
+	 * @generated
+	 */
     IArchimateRelationship getArchimateRelationship();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelArchimateConnection#getArchimateRelationship <em>Archimate Relationship</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelArchimateConnection#getArchimateRelationship <em>Archimate Relationship</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Archimate Relationship</em>' reference.
-     * @see #getArchimateRelationship()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Archimate Relationship</em>' reference.
+	 * @see #getArchimateRelationship()
+	 * @generated
+	 */
     void setArchimateRelationship(IArchimateRelationship value);
 
     /**

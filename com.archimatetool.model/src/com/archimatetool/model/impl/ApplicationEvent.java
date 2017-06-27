@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ApplicationEvent extends ArchimateElement implements IApplicationEvent {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationEvent() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_EVENT;
-    }
+		return IArchimatePackage.Literals.APPLICATION_EVENT;
+	}
 
 } //ApplicationEvent

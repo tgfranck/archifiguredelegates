@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TechnologyInteraction extends ArchimateElement implements ITechnologyInteraction {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyInteraction() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_INTERACTION;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_INTERACTION;
+	}
 
 } //TechnologyInteraction

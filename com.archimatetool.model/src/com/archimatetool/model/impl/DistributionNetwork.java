@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class DistributionNetwork extends ArchimateElement implements IDistributionNetwork {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected DistributionNetwork() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.DISTRIBUTION_NETWORK;
-    }
+		return IArchimatePackage.Literals.DISTRIBUTION_NETWORK;
+	}
 
 } //DistributionNetwork

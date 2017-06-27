@@ -53,73 +53,73 @@ import com.archimatetool.model.IProperty;
  */
 public abstract class ArchimateConcept extends EObjectImpl implements IArchimateConcept {
     /**
-     * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String NAME_EDEFAULT = ""; //$NON-NLS-1$
 
     /**
-     * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected String name = NAME_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getId()
-     * @generated
-     * @ordered
-     */
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String ID_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getId()
-     * @generated
-     * @ordered
-     */
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
     protected String id = ID_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getDocumentation() <em>Documentation</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDocumentation() <em>Documentation</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getDocumentation()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDocumentation()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String DOCUMENTATION_EDEFAULT = ""; //$NON-NLS-1$
 
     /**
-     * The cached value of the '{@link #getDocumentation() <em>Documentation</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDocumentation() <em>Documentation</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getDocumentation()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDocumentation()
+	 * @generated
+	 * @ordered
+	 */
     protected String documentation = DOCUMENTATION_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getProperties() <em>Properties</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getProperties() <em>Properties</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getProperties()
-     * @generated
-     * @ordered
-     */
+	 * @see #getProperties()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<IProperty> properties;
 
     /**
@@ -133,98 +133,98 @@ public abstract class ArchimateConcept extends EObjectImpl implements IArchimate
     protected EList<IArchimateRelationship> sourceRelationships, targetRelationships;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ArchimateConcept() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ARCHIMATE_CONCEPT;
-    }
+		return IArchimatePackage.Literals.ARCHIMATE_CONCEPT;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getId() {
-        return id;
-    }
+		return id;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setId(String newId) {
-        String oldId = id;
-        id = newId;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__ID, oldId, id));
-    }
+		String oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__ID, oldId, id));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-        return name;
-    }
+		return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__NAME, oldName, name));
-    }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__NAME, oldName, name));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getDocumentation() {
-        return documentation;
-    }
+		return documentation;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setDocumentation(String newDocumentation) {
-        String oldDocumentation = documentation;
-        documentation = newDocumentation;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION, oldDocumentation, documentation));
-    }
+		String oldDocumentation = documentation;
+		documentation = newDocumentation;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION, oldDocumentation, documentation));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<IProperty> getProperties() {
-        if (properties == null) {
-            properties = new EObjectContainmentEList<IProperty>(IProperty.class, this, IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES);
-        }
-        return properties;
-    }
+		if (properties == null) {
+			properties = new EObjectContainmentEList<IProperty>(IProperty.class, this, IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES);
+		}
+		return properties;
+	}
 
     @Override
     public EList<IArchimateRelationship> getSourceRelationships() {
@@ -288,205 +288,205 @@ public abstract class ArchimateConcept extends EObjectImpl implements IArchimate
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
-                return ((InternalEList<?>)getProperties()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
+				return ((InternalEList<?>)getProperties()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
-                return getName();
-            case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
-                return getId();
-            case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
-                return getDocumentation();
-            case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
-                return getProperties();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
+				return getName();
+			case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
+				return getId();
+			case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
+				return getDocumentation();
+			case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
+				return getProperties();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
-                setName((String)newValue);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
-                setId((String)newValue);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
-                setDocumentation((String)newValue);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
-                getProperties().clear();
-                getProperties().addAll((Collection<? extends IProperty>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
+				setName((String)newValue);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
+				setId((String)newValue);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
+				setDocumentation((String)newValue);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
+				getProperties().clear();
+				getProperties().addAll((Collection<? extends IProperty>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
-                setName(NAME_EDEFAULT);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
-                setId(ID_EDEFAULT);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
-                setDocumentation(DOCUMENTATION_EDEFAULT);
-                return;
-            case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
-                getProperties().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
+				setId(ID_EDEFAULT);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
+				setDocumentation(DOCUMENTATION_EDEFAULT);
+				return;
+			case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
+				getProperties().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
-                return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-            case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
-                return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-            case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
-                return DOCUMENTATION_EDEFAULT == null ? documentation != null : !DOCUMENTATION_EDEFAULT.equals(documentation);
-            case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
-                return properties != null && !properties.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case IArchimatePackage.ARCHIMATE_CONCEPT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case IArchimatePackage.ARCHIMATE_CONCEPT__ID:
+				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
+			case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION:
+				return DOCUMENTATION_EDEFAULT == null ? documentation != null : !DOCUMENTATION_EDEFAULT.equals(documentation);
+			case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES:
+				return properties != null && !properties.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-        if (baseClass == INameable.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.ARCHIMATE_CONCEPT__NAME: return IArchimatePackage.NAMEABLE__NAME;
-                default: return -1;
-            }
-        }
-        if (baseClass == IIdentifier.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.ARCHIMATE_CONCEPT__ID: return IArchimatePackage.IDENTIFIER__ID;
-                default: return -1;
-            }
-        }
-        if (baseClass == ICloneable.class) {
-            switch (derivedFeatureID) {
-                default: return -1;
-            }
-        }
-        if (baseClass == IDocumentable.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION: return IArchimatePackage.DOCUMENTABLE__DOCUMENTATION;
-                default: return -1;
-            }
-        }
-        if (baseClass == IProperties.class) {
-            switch (derivedFeatureID) {
-                case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES: return IArchimatePackage.PROPERTIES__PROPERTIES;
-                default: return -1;
-            }
-        }
-        return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
-    }
+		if (baseClass == INameable.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.ARCHIMATE_CONCEPT__NAME: return IArchimatePackage.NAMEABLE__NAME;
+				default: return -1;
+			}
+		}
+		if (baseClass == IIdentifier.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.ARCHIMATE_CONCEPT__ID: return IArchimatePackage.IDENTIFIER__ID;
+				default: return -1;
+			}
+		}
+		if (baseClass == ICloneable.class) {
+			switch (derivedFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == IDocumentable.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION: return IArchimatePackage.DOCUMENTABLE__DOCUMENTATION;
+				default: return -1;
+			}
+		}
+		if (baseClass == IProperties.class) {
+			switch (derivedFeatureID) {
+				case IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES: return IArchimatePackage.PROPERTIES__PROPERTIES;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-        if (baseClass == INameable.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.NAMEABLE__NAME: return IArchimatePackage.ARCHIMATE_CONCEPT__NAME;
-                default: return -1;
-            }
-        }
-        if (baseClass == IIdentifier.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.IDENTIFIER__ID: return IArchimatePackage.ARCHIMATE_CONCEPT__ID;
-                default: return -1;
-            }
-        }
-        if (baseClass == ICloneable.class) {
-            switch (baseFeatureID) {
-                default: return -1;
-            }
-        }
-        if (baseClass == IDocumentable.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.DOCUMENTABLE__DOCUMENTATION: return IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION;
-                default: return -1;
-            }
-        }
-        if (baseClass == IProperties.class) {
-            switch (baseFeatureID) {
-                case IArchimatePackage.PROPERTIES__PROPERTIES: return IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES;
-                default: return -1;
-            }
-        }
-        return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-    }
+		if (baseClass == INameable.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.NAMEABLE__NAME: return IArchimatePackage.ARCHIMATE_CONCEPT__NAME;
+				default: return -1;
+			}
+		}
+		if (baseClass == IIdentifier.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.IDENTIFIER__ID: return IArchimatePackage.ARCHIMATE_CONCEPT__ID;
+				default: return -1;
+			}
+		}
+		if (baseClass == ICloneable.class) {
+			switch (baseFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == IDocumentable.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.DOCUMENTABLE__DOCUMENTATION: return IArchimatePackage.ARCHIMATE_CONCEPT__DOCUMENTATION;
+				default: return -1;
+			}
+		}
+		if (baseClass == IProperties.class) {
+			switch (baseFeatureID) {
+				case IArchimatePackage.PROPERTIES__PROPERTIES: return IArchimatePackage.ARCHIMATE_CONCEPT__PROPERTIES;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (name: "); //$NON-NLS-1$
-        result.append(name);
-        result.append(", id: "); //$NON-NLS-1$
-        result.append(id);
-        result.append(", documentation: "); //$NON-NLS-1$
-        result.append(documentation);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: "); //$NON-NLS-1$
+		result.append(name);
+		result.append(", id: "); //$NON-NLS-1$
+		result.append(id);
+		result.append(", documentation: "); //$NON-NLS-1$
+		result.append(documentation);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ArchimateConcept

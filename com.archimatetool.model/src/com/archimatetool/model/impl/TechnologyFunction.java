@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TechnologyFunction extends ArchimateElement implements ITechnologyFunction {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyFunction() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_FUNCTION;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_FUNCTION;
+	}
 
 } //TechnologyFunction

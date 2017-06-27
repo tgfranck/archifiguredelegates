@@ -20,22 +20,22 @@ import com.archimatetool.model.IArchimatePackage;
  */
 public class ApplicationService extends ArchimateElement implements IApplicationService {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationService() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_SERVICE;
-    }
+		return IArchimatePackage.Literals.APPLICATION_SERVICE;
+	}
 
 } //ApplicationService

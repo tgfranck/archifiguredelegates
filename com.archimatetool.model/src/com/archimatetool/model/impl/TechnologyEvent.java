@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TechnologyEvent extends ArchimateElement implements ITechnologyEvent {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyEvent() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_EVENT;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_EVENT;
+	}
 
 } //TechnologyEvent

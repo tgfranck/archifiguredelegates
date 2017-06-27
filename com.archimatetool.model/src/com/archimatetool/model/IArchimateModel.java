@@ -33,150 +33,150 @@ import com.archimatetool.model.util.IDAdapter;
  */
 public interface IArchimateModel extends IFolderContainer, IArchimateModelObject, IProperties {
     /**
-     * Returns the value of the '<em><b>Purpose</b></em>' attribute.
-     * The default value is <code>""</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Purpose</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Purpose</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Purpose</em>' attribute.
-     * @see #setPurpose(String)
-     * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Purpose()
-     * @model default=""
-     *        extendedMetaData="kind='element'"
-     * @generated
-     */
+	 * @return the value of the '<em>Purpose</em>' attribute.
+	 * @see #setPurpose(String)
+	 * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Purpose()
+	 * @model default=""
+	 *        extendedMetaData="kind='element'"
+	 * @generated
+	 */
     String getPurpose();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getPurpose <em>Purpose</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getPurpose <em>Purpose</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Purpose</em>' attribute.
-     * @see #getPurpose()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Purpose</em>' attribute.
+	 * @see #getPurpose()
+	 * @generated
+	 */
     void setPurpose(String value);
 
     /**
-     * Returns the value of the '<em><b>File</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>File</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>File</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>File</em>' attribute.
-     * @see #setFile(File)
-     * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_File()
-     * @model dataType="com.archimatetool.model.File" transient="true"
-     * @generated
-     */
+	 * @return the value of the '<em>File</em>' attribute.
+	 * @see #setFile(File)
+	 * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_File()
+	 * @model dataType="com.archimatetool.model.File" transient="true"
+	 * @generated
+	 */
     File getFile();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getFile <em>File</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getFile <em>File</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>File</em>' attribute.
-     * @see #getFile()
-     * @generated
-     */
+	 * @param value the new value of the '<em>File</em>' attribute.
+	 * @see #getFile()
+	 * @generated
+	 */
     void setFile(File value);
 
     /**
-     * Returns the value of the '<em><b>Version</b></em>' attribute.
-     * The default value is <code>""</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Version</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Version</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Version</em>' attribute.
-     * @see #setVersion(String)
-     * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Version()
-     * @model default=""
-     * @generated
-     */
+	 * @return the value of the '<em>Version</em>' attribute.
+	 * @see #setVersion(String)
+	 * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Version()
+	 * @model default=""
+	 * @generated
+	 */
     String getVersion();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getVersion <em>Version</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getVersion <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Version</em>' attribute.
-     * @see #getVersion()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Version</em>' attribute.
+	 * @see #getVersion()
+	 * @generated
+	 */
     void setVersion(String value);
 
     /**
-     * Returns the value of the '<em><b>Metadata</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Metadata</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Metadata</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Metadata</em>' containment reference.
-     * @see #setMetadata(IMetadata)
-     * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Metadata()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Metadata</em>' containment reference.
+	 * @see #setMetadata(IMetadata)
+	 * @see com.archimatetool.model.IArchimatePackage#getArchimateModel_Metadata()
+	 * @model containment="true"
+	 * @generated
+	 */
     IMetadata getMetadata();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getMetadata <em>Metadata</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IArchimateModel#getMetadata <em>Metadata</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Metadata</em>' containment reference.
-     * @see #getMetadata()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Metadata</em>' containment reference.
+	 * @see #getMetadata()
+	 * @generated
+	 */
     void setMetadata(IMetadata value);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void setDefaults();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model objectRequired="true"
-     * @generated
-     */
+	 * @model objectRequired="true"
+	 * @generated
+	 */
     IFolder getDefaultFolderForObject(EObject object);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     IDiagramModel getDefaultDiagramModel();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     EList<IDiagramModel> getDiagramModels();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     IFolder getFolder(FolderType type);
 
     /**

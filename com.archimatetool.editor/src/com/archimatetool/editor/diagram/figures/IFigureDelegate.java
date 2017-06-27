@@ -16,6 +16,8 @@ import org.eclipse.draw2d.geometry.Rectangle;
  * @author Phillip Beauvoir
  */
 public interface IFigureDelegate {
+	
+	String EXTENSIONPOINT_ID = "com.archimatetool.editor.figureDelegate";
     
     /**
      * Draw the figure

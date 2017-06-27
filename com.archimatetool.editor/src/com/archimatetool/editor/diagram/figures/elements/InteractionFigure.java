@@ -14,10 +14,6 @@ import org.eclipse.swt.graphics.Path;
 
 import com.archimatetool.editor.diagram.editparts.RoundedRectangleAnchor;
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.RoundedRectangleFigureDelegate;
-
-
-
 
 /**
  * Interaction Figure
@@ -29,7 +25,7 @@ public class InteractionFigure extends AbstractTextControlContainerFigure {
     public InteractionFigure() {
         super(TEXT_FLOW_CONTROL);
         // Use a Rounded Rectangle Figure Delegate to Draw
-        setFigureDelegate(new RoundedRectangleFigureDelegate(this, 20 - getTextControlMarginWidth()));
+        //setFigureDelegate(new RoundedRectangleFigureDelegate(this, 20 - getTextControlMarginWidth()));
     }
     
     @Override

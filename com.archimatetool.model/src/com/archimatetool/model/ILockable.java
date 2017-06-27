@@ -25,29 +25,29 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ILockable extends EObject {
     /**
-     * Returns the value of the '<em><b>Locked</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Locked</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Locked</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Locked</em>' attribute.
-     * @see #setLocked(boolean)
-     * @see com.archimatetool.model.IArchimatePackage#getLockable_Locked()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Locked</em>' attribute.
+	 * @see #setLocked(boolean)
+	 * @see com.archimatetool.model.IArchimatePackage#getLockable_Locked()
+	 * @model
+	 * @generated
+	 */
     boolean isLocked();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.ILockable#isLocked <em>Locked</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.ILockable#isLocked <em>Locked</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Locked</em>' attribute.
-     * @see #isLocked()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Locked</em>' attribute.
+	 * @see #isLocked()
+	 * @generated
+	 */
     void setLocked(boolean value);
 
 } // ILockable

@@ -20,22 +20,22 @@ import com.archimatetool.model.IDriver;
  */
 public class Driver extends ArchimateElement implements IDriver {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Driver() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.DRIVER;
-    }
+		return IArchimatePackage.Literals.DRIVER;
+	}
 
 } //Driver

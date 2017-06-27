@@ -20,22 +20,22 @@ import com.archimatetool.model.IDevice;
  */
 public class Device extends ArchimateElement implements IDevice {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Device() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.DEVICE;
-    }
+		return IArchimatePackage.Literals.DEVICE;
+	}
 
 } //Device

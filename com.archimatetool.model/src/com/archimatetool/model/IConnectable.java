@@ -26,52 +26,52 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface IConnectable extends IDiagramModelComponent {
     /**
-     * Returns the value of the '<em><b>Source Connections</b></em>' containment reference list.
-     * The list contents are of type {@link com.archimatetool.model.IDiagramModelConnection}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source Connections</b></em>' containment reference list.
+	 * The list contents are of type {@link com.archimatetool.model.IDiagramModelConnection}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Source Connections</em>' containment reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Source Connections</em>' containment reference list.
-     * @see com.archimatetool.model.IArchimatePackage#getConnectable_SourceConnections()
-     * @model containment="true"
-     *        extendedMetaData="name='sourceConnection' kind='element'"
-     * @generated
-     */
+	 * @return the value of the '<em>Source Connections</em>' containment reference list.
+	 * @see com.archimatetool.model.IArchimatePackage#getConnectable_SourceConnections()
+	 * @model containment="true"
+	 *        extendedMetaData="name='sourceConnection' kind='element'"
+	 * @generated
+	 */
     EList<IDiagramModelConnection> getSourceConnections();
 
     /**
-     * Returns the value of the '<em><b>Target Connections</b></em>' reference list.
-     * The list contents are of type {@link com.archimatetool.model.IDiagramModelConnection}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target Connections</b></em>' reference list.
+	 * The list contents are of type {@link com.archimatetool.model.IDiagramModelConnection}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Target Connections</em>' reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Target Connections</em>' reference list.
-     * @see com.archimatetool.model.IArchimatePackage#getConnectable_TargetConnections()
-     * @model resolveProxies="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Target Connections</em>' reference list.
+	 * @see com.archimatetool.model.IArchimatePackage#getConnectable_TargetConnections()
+	 * @model resolveProxies="false"
+	 * @generated
+	 */
     EList<IDiagramModelConnection> getTargetConnections();
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void addConnection(IDiagramModelConnection connection);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void removeConnection(IDiagramModelConnection connection);
 
 } // IConnectable

@@ -20,22 +20,22 @@ import com.archimatetool.model.IGap;
  */
 public class Gap extends ArchimateElement implements IGap {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Gap() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.GAP;
-    }
+		return IArchimatePackage.Literals.GAP;
+	}
 
 } //Gap

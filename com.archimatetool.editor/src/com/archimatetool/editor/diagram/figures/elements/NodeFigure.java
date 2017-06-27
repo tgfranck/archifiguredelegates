@@ -12,10 +12,7 @@ import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
 
 import com.archimatetool.editor.diagram.figures.AbstractTextControlContainerFigure;
-import com.archimatetool.editor.diagram.figures.IFigureDelegate;
-import com.archimatetool.editor.diagram.figures.RectangleFigureDelegate;
 import com.archimatetool.model.IDiagramModelArchimateObject;
-
 
 /**
  * Figure for a Node
@@ -24,23 +21,16 @@ import com.archimatetool.model.IDiagramModelArchimateObject;
  */
 public class NodeFigure extends AbstractTextControlContainerFigure {
     
-    protected IFigureDelegate fFigureDelegate1;
-    protected IFigureDelegate fFigureDelegate2;
-    
     public NodeFigure() {
         super(TEXT_FLOW_CONTROL);
-        fFigureDelegate1 = new BoxFigureDelegate(this, 0);
-        fFigureDelegate2 = new RectangleFigureDelegate(this, 20 - getTextControlMarginWidth());
+//        fFigureDelegate1 = new BoxFigureDelegate(this, 0);
+//        fFigureDelegate2 = new RectangleFigureDelegate(this, 20 - getTextControlMarginWidth());
     }
     
     @Override
     protected void drawFigure(Graphics graphics) {
         super.drawFigure(graphics);
-        
-        int type = getDiagramModelObject().getType();
-        if(type == 1) {
-            drawIcon(graphics);
-        }
+        drawIcon(graphics);        
     }
     
     /**
@@ -88,11 +78,11 @@ public class NodeFigure extends AbstractTextControlContainerFigure {
         return new Point(bounds.x + bounds.width - 18, bounds.y + 9);
     }
     
-    @Override
-    public IFigureDelegate getFigureDelegate() {
-        int type = getDiagramModelObject().getType();
-        return type == 0 ? fFigureDelegate1 : fFigureDelegate2;
-    }
+//    @Override
+//    public IFigureDelegate getFigureDelegate() {
+//        int type = getDiagramModelObject().getType();
+//        return type == 0 ? fFigureDelegate1 : fFigureDelegate2;
+//    }
     
     @Override
     public IDiagramModelArchimateObject getDiagramModelObject() {

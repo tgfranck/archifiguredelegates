@@ -19,22 +19,22 @@ import com.archimatetool.model.ITechnologyInterface;
  */
 public class TechnologyInterface extends ArchimateElement implements ITechnologyInterface {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TechnologyInterface() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.TECHNOLOGY_INTERFACE;
-    }
+		return IArchimatePackage.Literals.TECHNOLOGY_INTERFACE;
+	}
 
 } //TechnologyInterface

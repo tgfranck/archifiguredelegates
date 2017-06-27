@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Material extends ArchimateElement implements IMaterial {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Material() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.MATERIAL;
-    }
+		return IArchimatePackage.Literals.MATERIAL;
+	}
 
 } //Material

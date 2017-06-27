@@ -19,22 +19,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class Equipment extends ArchimateElement implements IEquipment {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Equipment() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.EQUIPMENT;
-    }
+		return IArchimatePackage.Literals.EQUIPMENT;
+	}
 
 } //Equipment

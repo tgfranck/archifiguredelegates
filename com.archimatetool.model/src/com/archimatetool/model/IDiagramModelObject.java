@@ -25,63 +25,63 @@ package com.archimatetool.model;
  */
 public interface IDiagramModelObject extends IConnectable, IFontAttribute, ILineObject, ITextAlignment {
     /**
-     * Returns the value of the '<em><b>Bounds</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Bounds</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Bounds</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Bounds</em>' containment reference.
-     * @see #setBounds(IBounds)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelObject_Bounds()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Bounds</em>' containment reference.
+	 * @see #setBounds(IBounds)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelObject_Bounds()
+	 * @model containment="true"
+	 * @generated
+	 */
     IBounds getBounds();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelObject#getBounds <em>Bounds</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelObject#getBounds <em>Bounds</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Bounds</em>' containment reference.
-     * @see #getBounds()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Bounds</em>' containment reference.
+	 * @see #getBounds()
+	 * @generated
+	 */
     void setBounds(IBounds value);
 
     /**
-     * Returns the value of the '<em><b>Fill Color</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Fill Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Fill Color</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Fill Color</em>' attribute.
-     * @see #setFillColor(String)
-     * @see com.archimatetool.model.IArchimatePackage#getDiagramModelObject_FillColor()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Fill Color</em>' attribute.
+	 * @see #setFillColor(String)
+	 * @see com.archimatetool.model.IArchimatePackage#getDiagramModelObject_FillColor()
+	 * @model
+	 * @generated
+	 */
     String getFillColor();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.IDiagramModelObject#getFillColor <em>Fill Color</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.IDiagramModelObject#getFillColor <em>Fill Color</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Fill Color</em>' attribute.
-     * @see #getFillColor()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Fill Color</em>' attribute.
+	 * @see #getFillColor()
+	 * @generated
+	 */
     void setFillColor(String value);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model
-     * @generated
-     */
+	 * @model
+	 * @generated
+	 */
     void setBounds(int x, int y, int width, int height);
 
 } // IDiagramModelObject

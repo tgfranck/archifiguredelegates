@@ -20,22 +20,22 @@ import com.archimatetool.model.ISystemSoftware;
  */
 public class SystemSoftware extends ArchimateElement implements ISystemSoftware {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SystemSoftware() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.SYSTEM_SOFTWARE;
-    }
+		return IArchimatePackage.Literals.SYSTEM_SOFTWARE;
+	}
 
 } //SystemSoftware

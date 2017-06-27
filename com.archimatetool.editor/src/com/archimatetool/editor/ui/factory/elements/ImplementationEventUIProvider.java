@@ -55,8 +55,4 @@ public class ImplementationEventUIProvider extends AbstractArchimateElementUIPro
         return ColorFactory.get(255, 224, 224);
     }
     
-    @Override
-    public boolean hasAlternateFigure() {
-        return true;
-    }
 }

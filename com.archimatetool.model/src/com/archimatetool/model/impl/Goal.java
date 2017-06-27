@@ -20,22 +20,22 @@ import com.archimatetool.model.IGoal;
  */
 public class Goal extends ArchimateElement implements IGoal {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Goal() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.GOAL;
-    }
+		return IArchimatePackage.Literals.GOAL;
+	}
 
 } //Goal

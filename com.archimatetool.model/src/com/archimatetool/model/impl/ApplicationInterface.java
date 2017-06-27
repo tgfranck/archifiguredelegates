@@ -19,22 +19,22 @@ import com.archimatetool.model.IArchimatePackage;
  */
 public class ApplicationInterface extends ArchimateElement implements IApplicationInterface {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ApplicationInterface() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.APPLICATION_INTERFACE;
-    }
+		return IArchimatePackage.Literals.APPLICATION_INTERFACE;
+	}
 
 } //ApplicationInterface

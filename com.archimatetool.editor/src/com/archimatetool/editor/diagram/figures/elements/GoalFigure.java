@@ -11,17 +11,13 @@ import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.swt.graphics.Path;
 
-
 /**
  * Figure for a Goal
  * 
  * @author Phillip Beauvoir
  */
 public class GoalFigure extends AbstractMotivationFigure {
-    
-    public GoalFigure() {
-    }
-    
+
     @Override
     protected void drawFigure(Graphics graphics) {
         super.drawFigure(graphics);

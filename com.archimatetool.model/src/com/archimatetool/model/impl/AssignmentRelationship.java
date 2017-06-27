@@ -20,22 +20,22 @@ import com.archimatetool.model.IAssignmentRelationship;
  */
 public class AssignmentRelationship extends ArchimateRelationship implements IAssignmentRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AssignmentRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ASSIGNMENT_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.ASSIGNMENT_RELATIONSHIP;
+	}
 
 } //AssignmentRelationship

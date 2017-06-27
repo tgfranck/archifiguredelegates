@@ -18,11 +18,11 @@ package com.archimatetool.model;
  */
 public interface IArchimateModelObject extends IAdapter, INameable, IIdentifier {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     IArchimateModel getArchimateModel();
 
 } // IArchimateModelObject
