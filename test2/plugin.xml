@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="test.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="test.Perspective"
+            id="test.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="test.testMenu"
+               label="Test">
+            <command
+                  commandId="test.ColorView"
+                  label="Color View"
+                  style="push">
+            </command>
+            <command
+                  commandId="test.ResetAllViews"
+                  label="Reset All Views"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="test.ColorView"
+            name="Color View">
+         <defaultHandler
+               class="com.thijsfranck.archicolorviews.test.OpenColorViewWizard">
+            <parameter
+                  name="test.parameter1"
+                  value="test.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="test.ResetAllViews"
+            name="Reset All Views">
+         <defaultHandler
+               class="com.thijsfranck.archicolorviews.test.ResetAllViewsHandler">
+            <parameter
+                  name="test.parameter1"
+                  value="test.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+   </extension>
+   <extension
+         point="com.archimatetool.editor.figureDelegateProvider">
+      <figureDelegateProvider
+            defaultDelegate="com.thijsfranck.archicolorviews.test.ColorViewLegendFigureDelegate"
+            id="test2.figureDelegateProvider1"
+            providerFor="com.thijsfranck.archicolorviews.test.ColorViewLegendFigure">
+      </figureDelegateProvider>
+   </extension>
+   <extension
+         point="com.archimatetool.editor.objectUIProvider">
+      <uiProvider
+            class="com.thijsfranck.archicolorviews.test.LegendUIProvider"
+            id="test.LegendUIProvider">
+      </uiProvider>
+   </extension>
+
+</plugin>
