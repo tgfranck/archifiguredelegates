@@ -9,5 +9,7 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
- com.archimatetool.model;visibility:=reexport
+ com.archimatetool.model;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi.source;bundle-version="2.12.0",
+ com.archimatetool.jdom;bundle-version="4.0.0"
 Bundle-ActivationPolicy: lazy

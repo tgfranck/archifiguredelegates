@@ -37,6 +37,16 @@
                   label="Reset All Views"
                   style="push">
             </command>
+            <command
+                  commandId="test.OpenDataImportWizard"
+                  label="Open Data Import Wizard"
+                  style="push">
+            </command>
+            <command
+                  commandId="test2.OpenDataStreamWizard"
+                  label="Open Data Stream Wizard"
+                  style="push">
+            </command>
          </menu>
       </menuContribution>
    </extension>
@@ -61,6 +71,28 @@
             <parameter
                   name="test.parameter1"
                   value="test.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="test.OpenDataImportWizard"
+            name="Open Data Import Wizard">
+         <defaultHandler
+               class="com.thijsfranck.archicolorviews.test.OpenDataImportWizard">
+            <parameter
+                  name="test.parameter1"
+                  value="test.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="test2.OpenDataStreamWizard"
+            name="Open Data Stream Wizard">
+         <defaultHandler
+               class="com.thijsfranck.archicolorviews.test.OpenDataStreamWizard">
+            <parameter
+                  name="test2.parameter1"
+                  value="test2.parameter1">
             </parameter>
          </defaultHandler>
       </command>

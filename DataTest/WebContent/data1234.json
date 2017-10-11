@@ -1,0 +1,21 @@
+{
+	"data":[
+		{"id":"app1", "property":[{"key":"quality", "type":"string", "value": "high"},
+								  {"key":"prize", "type":"number", "value": 10000},
+								  {"key":"frequency", "type":"number", "value": 12.5}
+								 ]},
+		{"id":"app2", "property":[{"key":"quality", "type":"string", "value": "low"},
+								  {"key":"prize", "type":"number", "value": 3000},
+								  {"key":"frequency", "type":"number", "value": 0.5}
+								 ]},
+		{"id":"process 1", "property":[{"key":"owner", "type":"string", "value": "Andreas"},
+								  {"key":"group", "type":"String", "value": "smart"},
+								  {"key":"frequency", "type":"number", "value": 5}
+								 ]},
+		{"id":"process 2", "property":[{"key":"owner", "type":"string", "value": "Thijs"},
+								  {"key":"group", "type":"string", "value": "smart"},
+								  {"key":"frequency", "type":"number", "value": 3}
+								 ]}						 
+	]
+	, "id":"12345"
+}

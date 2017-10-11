@@ -1446,6 +1446,11 @@
             id="com.archimatetool.editor.figureDelegateProvider47"
             providerFor="com.archimatetool.editor.diagram.figures.elements.WorkPackageFigure">
       </figureDelegateProvider>
+      <figureDelegateProvider
+            defaultDelegate="com.archimatetool.editor.diagram.figuredelegates.elements.AbstractMotivationFigureDelegate"
+            id="com.archimatetool.editor.DriverFigureDelegateProvider"
+            providerFor="com.archimatetool.editor.diagram.figures.elements.DriverFigure">
+      </figureDelegateProvider>
    </extension>
 
 </plugin>
